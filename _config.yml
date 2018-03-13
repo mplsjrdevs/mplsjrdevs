@@ -32,5 +32,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-# includes: ["_pages"]
-# permalink: /:title/
