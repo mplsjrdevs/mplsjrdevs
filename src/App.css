@@ -1,3 +1,6 @@
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
 .App {
   text-align: center;
 }
@@ -28,6 +31,5 @@
 }
 
 .logo {
-  max-height: 50vh;
-  max-width: 75vw;
+  height: 40px;
 }
