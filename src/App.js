@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-        <Navbar>
+        <header>
+        <Navbar className = "App-header">
           <NavbarGroup align={Alignment.LEFT}>
             <NavbarHeading><img src={logo} className="logo" alt="Mpls Jr Devs" /></NavbarHeading>
           </NavbarGroup>
