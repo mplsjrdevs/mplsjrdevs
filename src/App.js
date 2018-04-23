@@ -10,10 +10,16 @@ import {
   NavbarGroup,
   Icon
 } from '@blueprintjs/core';
+import ReactGA from 'react-ga';
+
 import './App.css';
 
 class App extends Component {
+  componentWillMount() {
+    ReactGA.initialize('UA-105372704-1');
+  }
   render() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
       <div className="App">
         <header className="App-header">
