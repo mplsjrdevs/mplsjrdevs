@@ -6,6 +6,7 @@
     "@blueprintjs/core": "^2.2.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
+    "react-ga": "2.5.0",
     "react-scripts": "1.1.4",
     "react-transition-group": "^2.3.1"
   },
@@ -13,6 +14,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,css,md}": [
+      "prettier --write --single-quote",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.12.1"
   }
 }
