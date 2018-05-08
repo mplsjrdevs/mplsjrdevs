@@ -22,8 +22,8 @@ class App extends Component {
     ReactGA.pageview(window.location.pathname + window.location.search);
     return (
       <div className="App">
-        <header className="App-header">
-          <Navbar>
+        <header>
+          <Navbar className="App-header">
             <NavbarGroup align={Alignment.LEFT}>
               <NavbarHeading>
                 <img src={logo} className="logo" alt="Mpls Jr Devs" />
