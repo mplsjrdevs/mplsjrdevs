@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './assets/images/mplsjrdevs-logo-white.svg';
+import logo from '../images/mplsjrdevs-logo-white.svg';
 import { Alignment, Button, Navbar, NavbarGroup } from '@blueprintjs/core';
 import ReactGA from 'react-ga';
 
-import './App.css';
+import '../styles/App.css';
 
 class App extends Component {
   componentWillMount() {
