@@ -17,3 +17,7 @@
 .logo {
   height: 40px;
 }
+
+section p {
+  padding: 20px;
+}
