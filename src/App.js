@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
-import reactLogo from './assets/images/react-logo.svg';
-import logo from './assets/images/mplsjrdevs-logo.svg';
-import {
-  Navbar,
-  NavbarHeading,
-  NavbarDivider,
-  Button,
-  Alignment,
-  NavbarGroup,
-  Icon
-} from '@blueprintjs/core';
+import logo from './assets/images/mplsjrdevs-logo-white.svg';
+import { Alignment, Button, Navbar, NavbarGroup } from '@blueprintjs/core';
 import ReactGA from 'react-ga';
 
 import './App.css';
@@ -23,14 +14,12 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <Navbar className="App-header">
+          <Navbar className="bg-pink">
             <NavbarGroup align={Alignment.LEFT}>
-              <NavbarHeading>
-                <img src={logo} className="logo" alt="Mpls Jr Devs" />
-              </NavbarHeading>
+              <img src={logo} className="logo" alt="Mpls Jr Devs" />
             </NavbarGroup>
             <NavbarGroup align={Alignment.RIGHT}>
-              <Button className="pt-minimal" icon="menu" />
+              <Button className="pt-minimal white" icon="menu" />
             </NavbarGroup>
           </Navbar>
         </header>
