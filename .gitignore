@@ -6,6 +6,10 @@
 # testing
 /coverage
 
+# development artifacts
+/.sass-cache
+/_site
+
 # production
 /build
 
