@@ -1,0 +1,23 @@
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+.App {
+  text-align: center;
+}
+
+.bg-pink {
+  background-color: #c9297b;
+}
+
+.white .pt-icon {
+  color: white;
+}
+
+.logo {
+  height: 40px;
+}
+
+section p {
+  padding: 20px;
+}
