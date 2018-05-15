@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 
 import Header from './Header';
-import Banner from './Banner';
+import Welcome from './Welcome';
 import About from './About';
 import Events from './Events';
 import Community from './Community';
@@ -19,22 +19,15 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-
-        <Banner />
-        <hr />
-
+        <Welcome />
         <About />
         <hr />
-
         <Events />
         <hr />
-
         <Community />
         <hr />
-
         <CodeOfConduct />
         <hr />
-
         <Contact />
         <hr />
       </div>
