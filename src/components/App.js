@@ -27,9 +27,7 @@ class App extends Component {
         <Community />
         <hr />
         <CodeOfConduct />
-        <hr />
         <Contact />
-        <hr />
       </div>
     );
   }

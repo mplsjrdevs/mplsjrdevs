@@ -2,6 +2,15 @@
 @import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
 @import '~@blueprintjs/core/lib/css/blueprint.css';
 @import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+@import '//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css';
+
+/* Hex brand color codes:
+  pink: #c9297b
+  light-pink: #f44e86
+  blue: #0079b0
+  light-blue: #56d3f4
+*/
+
 .App {
   text-align: center;
 }
@@ -16,6 +25,13 @@
 
 .logo {
   height: 40px;
+}
+
+hr {
+  border-top: 1px solid #f44e86;
+  border-bottom: none;
+  max-width: 100px;
+  margin: 15px auto;
 }
 
 #welcome {
@@ -36,4 +52,35 @@
   max-width: 550px;
   padding: 20px;
   font-size: 1.7em;
+}
+
+#contact {
+  background-color: #0079b0;
+  color: white;
+  padding: 20px;
+}
+
+#contact h2,
+#contact h3 {
+  color: white;
+}
+
+#contact a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* mailchimp embedded form */
+#mc_embed_signup {
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup .button {
+  background-color: #f44e86;
+}
+
+#mc_hidden {
+  position: absolute;
+  left: -5000px;
 }
