@@ -9,3 +9,25 @@
 .white .pt-icon {
   color: $white;
 }
+
+hr {
+  border-top: 1px solid #f44e86;
+  border-bottom: none;
+  max-width: 100px;
+  margin: 15px auto;
+}
+
+/* mailchimp embedded form */
+#mc_embed_signup {
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup .button {
+  background-color: #f44e86;
+}
+
+#mc_hidden {
+  position: absolute;
+  left: -5000px;
+}
