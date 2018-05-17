@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     ReactGA.pageview(window.location.pathname + window.location.search);
     return (
-      <div className="App">
+      <div className="App" id="home">
         <Header />
         <Welcome />
         <About />
