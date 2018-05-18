@@ -1,0 +1,42 @@
+section p {
+  padding: rem(20px);
+}
+
+// WELCOME SECTION
+#welcome {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 121, 176, 0.6) 0%,
+      rgba(0, 121, 176, 0.6)
+    ),
+    url(../images/banner.jpg) no-repeat center center / cover;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    color: white;
+    max-width: 550px;
+    padding: 20px;
+    font-size: 1.7em;
+  }
+}
+
+// CONTACT SECTION
+#contact {
+  background-color: #0079b0;
+  color: white;
+  padding: 20px;
+
+  h2,
+  h3 {
+    color: white;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+}

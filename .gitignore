@@ -9,6 +9,7 @@
 # development artifacts
 /.sass-cache
 /_site
+src/**/*.css
 
 # production
 /build
