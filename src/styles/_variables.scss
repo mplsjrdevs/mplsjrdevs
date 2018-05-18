@@ -10,6 +10,9 @@ $light-blue: #56d3f4;
 $white: #fff;
 $black: #010a07;
 
+$primary: $pink;
+$secondary: $blue;
+
 // PX to REM - https://github.com/pierreburel/sass-rem
 $rem-baseline: 16px !default;
 $rem-fallback: false !default;
@@ -91,5 +94,3 @@ $rem-px-only: false !default;
   }
 }
 // End PX to REM
-
-

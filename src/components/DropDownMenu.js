@@ -3,7 +3,7 @@ import { Menu, MenuItem } from '@blueprintjs/core';
 
 const DropDownMenu = () => {
   return (
-    <Menu>
+    <Menu className="DropDownMenu bg-pink">
       <MenuItem text="Home" href="#home" />
       <MenuItem text="About" href="#about" />
       <MenuItem text="Events" href="#events" />
