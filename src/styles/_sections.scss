@@ -1,7 +1,3 @@
-section p {
-  padding: rem(20px);
-}
-
 // HEADER
 .logo {
   height: 40px;
@@ -28,6 +24,33 @@ section p {
   }
 }
 
+// ABOUT
+#about {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+
+  .content-wrap {
+    flex-basis: 65%;
+    margin-right: 2rem;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: $laptop) {
+    flex-direction: column;
+    padding: 3rem 1rem;
+
+    .content-wrap {
+      flex-basis: auto;
+      margin: 2rem 0;
+    }
+  }
+}
+
 // CONTACT
 #contact {
   background-color: $secondary;
@@ -44,4 +67,7 @@ section p {
     text-decoration: underline;
   }
 
+  p {
+    padding: rem(20px);
+  }
 }

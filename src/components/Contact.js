@@ -14,7 +14,7 @@ const Contact = () => {
           name="mc-embedded-subscribe-form"
           className="validate"
           target="_blank"
-          novalidate
+          noValidate
         >
           <div id="mc_embed_signup_scroll">
             <input
@@ -30,7 +30,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="b_15e9ff6a082fef90507e7abca_8fbf9281ef"
-                tabindex="-1"
+                tabIndex="-1"
                 value=""
               />
             </div>

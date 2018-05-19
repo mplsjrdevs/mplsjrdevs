@@ -13,6 +13,11 @@ $black: #010a07;
 $primary: $pink;
 $secondary: $blue;
 
+// MEDIA BREAKPOINTS
+$mobile: 420px;
+$tablet: 720px;
+$laptop: 960px;
+
 // PX to REM - https://github.com/pierreburel/sass-rem
 $rem-baseline: 16px !default;
 $rem-fallback: false !default;
