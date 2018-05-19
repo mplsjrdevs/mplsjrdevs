@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="content-wrap blue">
-        <h2 className="blue">About MPLS Jr Devs</h2>
+        <h2 className="blue">About Mpls Jr Devs</h2>
         <p>
           Our priority is to make space for aspiring and less experienced
           software engineers to meet, learn from, and share experiences with one
@@ -17,7 +17,7 @@ const About = () => {
 
       <img
         src={EventImage}
-        alt="MPLS Jr Devs Event at Lake Monster Brewing"
+        alt="Mpls Jr Devs Event at Lake Monster Brewing"
         className="responsive"
       />
     </section>
