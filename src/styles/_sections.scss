@@ -31,11 +31,22 @@
   padding: 4rem;
 
   .content-wrap {
-    flex: 1 0 65%;
+    flex-basis: 65%;
+    margin-right: 2rem;
     text-align: left;
 
     h2 {
       margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: $laptop) {
+    flex-direction: column;
+    padding: 3rem 1rem;
+
+    .content-wrap {
+      flex-basis: auto;
+      margin: 2rem 0;
     }
   }
 }
