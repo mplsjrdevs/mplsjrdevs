@@ -21,11 +21,8 @@ class App extends Component {
         <Header />
         <Welcome />
         <About />
-        <hr />
         <Events />
-        <hr />
         <Community />
-        <hr />
         <CodeOfConduct />
         <Contact />
       </div>

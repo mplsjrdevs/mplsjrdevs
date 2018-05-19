@@ -1,3 +1,32 @@
+%primary-section {
+  color: $blue;
+
+  h2 {
+    color: $light-pink;
+  }
+
+  h3 {
+    color: $blue;
+  }
+}
+
+%secondary-section {
+  background-color: $secondary;
+  color: $white;
+
+  h2 {
+    color: $white;
+  }
+
+  h3 {
+    color: $light-blue;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
 // HEADER
 .logo {
   height: 40px;
@@ -26,6 +55,7 @@
 
 // ABOUT
 #about {
+  @extend %primary-section;
   display: flex;
   align-items: center;
   padding: 4rem;
@@ -51,23 +81,27 @@
   }
 }
 
+// EVENTS
+#events {
+  @extend %secondary-section;
+
+  p,
+  li {
+    line-height: 1.7rem;
+  }
+}
+
+// COMMUNITY
+#community {
+  @extend %primary-section;
+}
+
+// CODE OF CONDUCT
+#code-of-conduct {
+  @extend %secondary-section;
+}
+
 // CONTACT
 #contact {
-  background-color: $secondary;
-  color: $white;
-  padding: 20px;
-
-  h2,
-  h3 {
-    color: $white;
-  }
-
-  a {
-    color: $white;
-    text-decoration: underline;
-  }
-
-  p {
-    padding: rem(20px);
-  }
+  @extend %primary-section;
 }

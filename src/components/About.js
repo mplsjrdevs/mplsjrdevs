@@ -4,8 +4,8 @@ import EventImage from '../images/mplsjrdevs1.jpg';
 const About = () => {
   return (
     <section id="about">
-      <div className="content-wrap blue">
-        <h2 className="blue">About Mpls Jr Devs</h2>
+      <div className="content-wrap">
+        <h2>About Mpls Jr Devs</h2>
         <p>
           Our priority is to make space for aspiring and less experienced
           software engineers to meet, learn from, and share experiences with one
