@@ -2,7 +2,12 @@ section p {
   padding: rem(20px);
 }
 
-// WELCOME SECTION
+// HEADER
+.logo {
+  height: 40px;
+}
+
+// WELCOME
 #welcome {
   background: linear-gradient(
       0deg,
@@ -16,27 +21,27 @@ section p {
   justify-content: center;
 
   .overlay {
-    color: white;
+    color: $white;
     max-width: 550px;
     padding: 20px;
     font-size: 1.7em;
   }
 }
 
-// CONTACT SECTION
+// CONTACT
 #contact {
-  background-color: #0079b0;
-  color: white;
+  background-color: $secondary;
+  color: $white;
   padding: 20px;
 
   h2,
   h3 {
-    color: white;
+    color: $white;
   }
 
   a {
-    color: white;
+    color: $white;
     text-decoration: underline;
   }
-  
+
 }

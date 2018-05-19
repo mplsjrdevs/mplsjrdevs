@@ -8,7 +8,8 @@ body {
   text-align: center;
 }
 
-.bg-pink {
+.bg-pink,
+.DropDownMenu.bg-pink {
   background-color: $pink;
 }
 
@@ -17,7 +18,7 @@ body {
 }
 
 hr {
-  border-top: 1px solid #f44e86;
+  border-top: 1px solid $light-pink;
   border-bottom: none;
   max-width: 100px;
   margin: 15px auto;
@@ -30,7 +31,7 @@ hr {
 }
 
 #mc_embed_signup .button {
-  background-color: #f44e86;
+  background-color: $light-pink;
 }
 
 #mc_hidden {
