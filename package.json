@@ -5,10 +5,15 @@
   "dependencies": {
     "@blueprintjs/core": "^2.2.1",
     "node-sass": "^4.9.0",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-flexbox-grid": "^2.1.0",
     "react-ga": "2.5.0",
+    "react-grid-gallery": "^0.4.11",
+    "react-modal": "^3.4.4",
+    "react-responsive-modal": "^3.0.1",
     "react-scripts": "2.0.0-next.66cc7a90",
+    "react-simple-flex-grid": "^1.2.1",
     "react-transition-group": "^2.3.1"
   },
   "scripts": {
