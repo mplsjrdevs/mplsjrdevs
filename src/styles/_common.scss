@@ -14,12 +14,33 @@ body {
   background-color: $pink;
 }
 
+.white,
 .white .pt-icon {
   color: $white;
 }
 
 .blue {
   color: $blue;
+}
+
+.light-blue {
+  color: $light-blue;
+}
+
+.pink {
+  color: $pink;
+}
+
+.light-pink {
+  color: $light-pink;
+}
+
+section {
+  padding: 20px;
+}
+
+a {
+  text-decoration: underline;
 }
 
 hr {

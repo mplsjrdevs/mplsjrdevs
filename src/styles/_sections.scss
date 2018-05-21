@@ -1,3 +1,32 @@
+%primary-section {
+  color: $blue;
+
+  h2 {
+    color: $light-pink;
+  }
+
+  h3 {
+    color: $blue;
+  }
+}
+
+%secondary-section {
+  background-color: $secondary;
+  color: $white;
+
+  h2 {
+    color: $white;
+  }
+
+  h3 {
+    color: $light-blue;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
 // HEADER
 .logo {
   height: 40px;
@@ -26,6 +55,7 @@
 
 // ABOUT
 #about {
+  @extend %primary-section;
   display: flex;
   align-items: center;
   padding: 4rem;
@@ -51,23 +81,73 @@
   }
 }
 
+// EVENTS
+#events {
+  @extend %secondary-section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    a {
+      color: $light-blue;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  p,
+  li {
+    line-height: 1.8rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  .date {
+    font-weight: 600;
+    color: $white;
+    min-width: 100px;
+    padding-right: 5px;
+    text-align: left;
+  }
+
+  .text {
+    color: $light-gray;
+
+    a {
+      color: $light-gray;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+// COMMUNITY
+#community {
+  @extend %primary-section;
+}
+
+// CODE OF CONDUCT
+#code-of-conduct {
+  @extend %secondary-section;
+}
+
 // CONTACT
 #contact {
-  background-color: $secondary;
-  color: $white;
-  padding: 20px;
-
-  h2,
-  h3 {
-    color: $white;
-  }
-
-  a {
-    color: $white;
-    text-decoration: underline;
-  }
-
-  p {
-    padding: rem(20px);
-  }
+  @extend %primary-section;
 }
