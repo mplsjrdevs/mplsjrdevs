@@ -5,6 +5,26 @@ body {
   font-size: 16px;
 }
 
+section {
+  padding: 20px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+hr {
+  border-top: 1px solid $light-pink;
+  border-bottom: none;
+  max-width: 100px;
+  margin: 15px auto;
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .App {
   text-align: center;
 }
@@ -35,24 +55,24 @@ body {
   color: $light-pink;
 }
 
-section {
-  padding: 20px;
+.bold {
+  font-weight: 600;
 }
 
-a {
-  text-decoration: underline;
-}
+.CodeofConduct.button,
+#mc_embed_signup .button,
+.button {
+  background-color: $light-pink;
+  background-image: none;
+  box-shadow: none;
+  color: $white;
+  &:hover {
+    background-color: $pink;
+  }
 
-hr {
-  border-top: 1px solid $light-pink;
-  border-bottom: none;
-  max-width: 100px;
-  margin: 15px auto;
-}
-
-img.responsive {
-  max-width: 100%;
-  height: auto;
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 }
 
 /* mailchimp embedded form */
@@ -61,11 +81,8 @@ img.responsive {
   font: 14px Helvetica, Arial, sans-serif;
 }
 
-#mc_embed_signup .button {
-  background-color: $light-pink;
-}
-
 #mc_hidden {
   position: absolute;
   left: -5000px;
 }
+/* end mailchimp embedded form */
