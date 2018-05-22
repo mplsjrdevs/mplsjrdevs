@@ -147,6 +147,10 @@
   @extend %secondary-section;
 }
 
+#coc-content {
+  padding: 20px;
+}
+
 // CONTACT
 #contact {
   @extend %primary-section;
