@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { Button, Dialog, Classes, Intent } from '@blueprintjs/core';
-import CoCContent from './CoCContent';
+import CodeOfConductContent from './CodeOfConductContent';
 
 class CodeOfConduct extends Component {
-  state = { isModalOpen: false };
+  state = {
+    // open modal if url ends with '/coc'
+    isModalOpen: window.location.pathname === '/coc'
+  };
 
   render() {
     return (
@@ -29,7 +32,7 @@ class CodeOfConduct extends Component {
           title="Code of Conduct"
           className="CodeofConduct modal"
         >
-          <CoCContent />
+          <CodeOfConductContent />
           <div className={Classes.DIALOG_FOOTER}>
             <div className={Classes.DIALOG_FOOTER_ACTIONS}>
               <Button
@@ -47,6 +50,8 @@ class CodeOfConduct extends Component {
 
   toggleModal = () => {
     this.setState({ ...this.state, isModalOpen: !this.state.isModalOpen });
+    // append '/coc' to url if modal was not already open
+    window.history.pushState(null, '', !this.state.isModalOpen ? '/coc' : '/');
   };
 }
 

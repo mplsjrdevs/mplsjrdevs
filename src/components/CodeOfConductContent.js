@@ -1,19 +1,21 @@
 import React from 'react';
 
-const CoCContent = () => {
+const CodeOfConductContent = () => {
   return (
     <div id="coc-content">
       <div className="cisclaimer">
         <p>
           This code of conduct applies to all spaces managed by Mpls Jr Devs,
           including:
-          <ul>
-            <li>Mpls Jr Devs events</li>
-            <li>Mpls Jr Devs Slack group</li>
-            <li>Mpls Jr Devs website</li>
-            <li>Mpls Jr Devs Twitter</li>
-            <li>Any other forums with which Mpls Jr Devs communicates</li>
-          </ul>
+        </p>
+        <ul>
+          <li>Mpls Jr Devs events</li>
+          <li>Mpls Jr Devs Slack group</li>
+          <li>Mpls Jr Devs website</li>
+          <li>Mpls Jr Devs Twitter</li>
+          <li>Any other forums with which Mpls Jr Devs communicates</li>
+        </ul>
+        <p>
           Violations of these rules outside the above listed spaces may affect a
           person&#39;s eligibility to participate within them.
         </p>
@@ -66,7 +68,16 @@ const CoCContent = () => {
           <li>Violent threats or language directed against another person.</li>
           <li>Discriminatory jokes and language.</li>
           <li>Posting sexually explicit or violent material.</li>
-          <li>Deliberate misgendering or use of ‘dead’ or rejected names.</li>
+          <li>
+            Deliberate misgendering or use of &quot;
+            <a
+              href="https://www.urbandictionary.com/define.php?term=deadname"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              dead
+            </a>&quot; or rejected names.
+          </li>
           <li>
             Physical contact or simulated physical contact without consent or
             after a request to stop.
@@ -156,11 +167,11 @@ const CoCContent = () => {
             We will respect confidentiality requests for the purpose of
             protecting victims of abuse.
           </span>{' '}
-          At our discretion, we may publicly name a person about whom we’ve
-          received harassment complaints, or privately warn third parties about
-          them, if we believe that doing so will increase the safety of our
-          members or the general public. We will not name harassment victims
-          without their affirmative consent.
+          At our discretion, we may publicly name a person who has been reported
+          of harassment, or privately warn third parties about them, if we
+          believe that doing so will increase the safety of our members or the
+          general public. We will not name victims of harassment without their
+          affirmative consent.
         </p>
 
         <h2>Consequences</h2>
@@ -181,4 +192,4 @@ const CoCContent = () => {
   );
 };
 
-export default CoCContent;
+export default CodeOfConductContent;
