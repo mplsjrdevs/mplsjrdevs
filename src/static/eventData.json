@@ -1,0 +1,294 @@
+[
+  {
+    "event_date": "2017-03-25",
+    "event_title": "What it's like to be a junior developer in MN",
+    "event_url": "http://sessions.minnestar.org/sessions/406",
+    "event_location": "Minnebar",
+    "presentation_format": "Open discussion",
+    "presentation_title": "Open discussion",
+    "presentation_url": "https://www.youtube.com/watch?v=8xfVMMfHpy8",
+    "presenters": []
+  },
+  {
+    "event_date": "2017-04-20",
+    "event_title": "Mpls Jr Devs #1",
+    "event_url": "mplsjrdevs1.eventbrite.com",
+    "event_location": "Lake Monster",
+    "presentation_format": "Small group introductions",
+    "presentation_title": "Small group introductions",
+    "presentation_url": "",
+    "presenters": []
+  },
+  {
+    "event_date": "2017-06-01",
+    "event_title": "Mpls Jr Devs #2",
+    "event_url": "mplsjrdevs2.eventbrite.com",
+    "event_location": "Software for Good",
+    "presentation_format": "Short-form",
+    "presentation_title": "Lightning talks",
+    "presentation_url": "",
+    "presenters": []
+  },
+  {
+    "event_date": "2017-07-25",
+    "event_title": "Mpls Jr Devs at Dev Ops Days",
+    "event_url": "",
+    "event_location": "DevOpsDays",
+    "presentation_format": "Open discussion",
+    "presentation_title": "Open discussion",
+    "presentation_url": "",
+    "presenters": []
+  },
+  {
+    "event_date": "2017-08-02",
+    "event_title": "Mpls Jr Devs #3",
+    "event_url": "mplsjrdevs3.eventbrite.com",
+    "event_location": "Pryes Brewing",
+    "presentation_format": "Show and tell",
+    "presentation_title": "Show and tell",
+    "presentation_url": "",
+    "presenters": []
+  },
+  {
+    "event_date": "2017-09-12",
+    "event_title": "Mpls Jr Devs #4",
+    "event_url": "mplsjrdevs4.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "Long-form",
+    "presentation_title": "Intro to Infosec",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "Ian Coldwater ",
+        "url": "https://twitter.com/iancoldwater"
+      },
+      {
+        "name": "Kat Traxler",
+        "url": "https://twitter.com/nightmarejs"
+      }
+    ]
+  },
+  {
+    "event_date": "2017-11-14",
+    "event_title": "Mpls Jr Devs #6",
+    "event_url": "mplsjrdevs6.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "Long-form",
+    "presentation_title": "Intro to Test-Driven Development",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "Eryn O'Neil",
+        "url": "https://twitter.com/eryno"
+      }
+    ]
+  },
+  {
+    "event_date": "2017-12-12",
+    "event_title": "Mpls Jr Devs #7",
+    "event_url": "mplsjrdevs7.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "Long-form",
+    "presentation_title": "Coding Exercises",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "Morgan Jones",
+        "url": ""
+      },
+      {
+        "name": "Ben Tilkens",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "event_date": "2018-01-09",
+    "event_title": "Mpls Jr Devs #8",
+    "event_url": "mplsjrdevs8.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "Long-form",
+    "presentation_title": "Junior Dev Job Search Tips",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "Paul DeBettignies",
+        "url": "https://twitter.com/mnheadhunter"
+      }
+    ]
+  },
+  {
+    "event_date": "2018-02-13",
+    "event_title": "Mpls Jr Devs #9",
+    "event_url": "mplsjrdevs9.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "Long-form",
+    "presentation_title": "Intro to Git",
+    "presentation_url": "https://github.com/jaw6/feb13-intro-git",
+    "presenters": [
+      {
+        "name": "Josh Wehner",
+        "url": "https://twitter.com/jaw6"
+      }
+    ]
+  },
+  {
+    "event_date": "2018-03-13",
+    "event_title": "Mpls Jr Devs #10",
+    "event_url": "mplsjrdevs10.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "Long-form",
+    "presentation_title": "Diversity & Inclusion",
+    "presentation_url":
+      "https://docs.google.com/presentation/d/1A4lOPyfv_k3I6jvgfFhIVQt17eq6c-lS8ZhlTl_dn-w/edit?usp=sharing",
+    "presenters": [
+      {
+        "name": "Ian Coldwater",
+        "url": "https://twitter.com/iancoldwater"
+      },
+      {
+        "name": "Matt Decuir",
+        "url": "https://twitter.com/experimatt"
+      }
+    ]
+  },
+  {
+    "event_date": "2018-04-14",
+    "event_title": "The state of the Junior Dev community in MN",
+    "event_url": "https://sessions.minnestar.org/sessions/587",
+    "event_location": "Minnebar",
+    "presentation_format": "Open discussion",
+    "presentation_title": "The state of the Junior Dev community in MN",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "Ian Coldwater",
+        "url": "https://twitter.com/iancoldwater"
+      },
+      {
+        "name": "Matt Decuir",
+        "url": "https://twitter.com/experimatt"
+      }
+    ]
+  },
+  {
+    "event_date": "2018-05-08",
+    "event_title": "Mpls Jr Devs #12",
+    "event_url": "mplsjrdevs12.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "30 min",
+    "presentation_title": "Intro to Functional Programming",
+    "presentation_url": "https://slides.com/joekarlsson/functional",
+    "presenters": [
+      {
+        "name": "Joe Karlsson",
+        "url": "https://twitter.com/joekarlsson1"
+      }
+    ]
+  },
+  {
+    "event_date": "2018-06-12",
+    "event_title": "Mpls Jr Devs #13",
+    "event_url": "mplsjrdevs13.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "30 min",
+    "presentation_title": "Intro to DNS",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "Justin Cardinal",
+        "url": "https://twitter.com/justincardinal"
+      }
+    ]
+  },
+  {
+    "event_date": "2018-07-10",
+    "event_title": "Mpls Jr Devs #14",
+    "event_url": "",
+    "event_location": "Prime",
+    "presentation_format": "",
+    "presentation_title": "TBD",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "TBD",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "event_date": "2018-08-14",
+    "event_title": "Mpls Jr Devs #15",
+    "event_url": "",
+    "event_location": "Prime",
+    "presentation_format": "",
+    "presentation_title": "TBD",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "TBD",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "event_date": "2018-09-11",
+    "event_title": "Mpls Jr Devs #16",
+    "event_url": "",
+    "event_location": "Prime",
+    "presentation_format": "",
+    "presentation_title": "TBD",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "TBD",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "event_date": "2018-10-09",
+    "event_title": "Mpls Jr Devs #17",
+    "event_url": "",
+    "event_location": "Prime",
+    "presentation_format": "",
+    "presentation_title": "TBD",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "TBD",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "event_date": "2018-11-13",
+    "event_title": "Mpls Jr Devs #18",
+    "event_url": "",
+    "event_location": "Prime",
+    "presentation_format": "",
+    "presentation_title": "TBD",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "TBD",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "event_date": "2018-12-11",
+    "event_title": "Mpls Jr Devs #19",
+    "event_url": "",
+    "event_location": "Prime",
+    "presentation_format": "",
+    "presentation_title": "TBD",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "TBD",
+        "url": ""
+      }
+    ]
+  }
+]
