@@ -145,6 +145,28 @@
 // CODE OF CONDUCT
 #code-of-conduct {
   @extend %secondary-section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+
+  @media (max-width: $laptop) {
+    padding: 3rem 1rem;
+  }
+
+  .padded {
+    padding: 10px 0;
+  }
+}
+
+// modal renders outside of #code-of-conduct
+.CodeofConduct.modal {
+  width: 90%;
+  max-width: 800px;
+}
+
+#coc-content {
+  padding: 20px;
 }
 
 // CONTACT
