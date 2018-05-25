@@ -1,25 +1,34 @@
 import React from 'react';
+import Event from './Event';
+import eventData from '../static/eventData.json';
+import _ from 'lodash';
+import moment from 'moment';
 
 const Events = () => {
+  // split past and upcoming events based on today's date
+  let [pastEvents, upcomingEvents] = _.partition(eventData, event => {
+    return moment(event.event_date)
+      .startOf('day')
+      .isSameOrBefore(moment().startOf('day'));
+  });
+
+  let nextEvent;
+  nextEvent =
+    upcomingEvents.length > 0 &&
+    _.orderBy(upcomingEvents, 'event_date', 'asc')[0];
+
+  pastEvents = _.orderBy(pastEvents, 'event_date', 'desc');
+
   return (
     <section id="events">
       <h2>Events</h2>
       <hr />
       <h3>Upcoming</h3>
-      <p>
-        <span className="date">June 12, 2018</span>
-        <br />
-        <span className="text">
-          Intro to DNS, by{' '}
-          <a
-            href="https://twitter.com/justincardinal"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Justin Cardinal
-          </a>
-        </span>
-      </p>
+      {nextEvent ? (
+        <Event key={nextEvent.event_date} {...nextEvent} />
+      ) : (
+        <div>No upcoming events :(</div>
+      )}
       <hr />
       <h3>
         <a
