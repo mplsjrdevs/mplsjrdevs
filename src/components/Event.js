@@ -11,22 +11,24 @@ const Event = props => {
 
   // build presenter names with links
   if (hasPresenters) {
-    presenterNames = props.presenters.map(person => {
-      if (person.url) {
-        return (
-          <a
-            key={person.name}
-            href={person.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {person.name}
-          </a>
-        );
-      } else {
-        return person.name;
-      }
-    });
+    presenterNames = props.presenters
+      .map(person => {
+        if (person.url) {
+          return (
+            <a
+              key={person.name}
+              href={person.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {person.name}
+            </a>
+          );
+        } else {
+          return person.name;
+        }
+      })
+      .reduce((prev, curr) => [prev, ' & ', curr]);
   }
 
   return (
@@ -37,6 +39,8 @@ const Event = props => {
         {presentationTitle}
         {presenterNames}
       </span>
+      <br />
+      <br />
     </div>
   );
 };
