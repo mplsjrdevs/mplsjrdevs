@@ -89,27 +89,28 @@
   align-items: center;
 
   h3 {
+    padding-top: 0.6rem;
+  }
+
+  .register {
+    width: 100%;
+    padding: 1rem 0;
+
+    .button {
+      font-weight: 600;
+    }
     a {
-      color: $light-blue;
       text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 
-  // ul {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   width: 80%;
-  //   max-width: 600px;
-  //   margin: 0 auto;
-  //   padding: 0;
-  //   list-style-type: none;
-  // }
-
-  li {
+  .event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    margin: 0 auto;
+    padding-top: 0.7rem;
   }
 
   .date {
@@ -123,12 +124,23 @@
   .text {
     line-height: 1.8rem;
     color: $light-gray;
+    width: 90%;
 
     a {
       color: $light-gray;
       &:hover {
         color: $white;
       }
+    }
+  }
+
+  .more-events {
+    width: 100%;
+    padding-bottom: 1rem;
+
+    .show-events-button {
+      margin-top: 1rem;
+      font-weight: 500;
     }
   }
 }

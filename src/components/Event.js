@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@blueprintjs/core';
 import moment from 'moment';
 import _ from 'lodash';
 
@@ -32,15 +33,19 @@ const Event = props => {
   }
 
   return (
-    <div>
-      <span className="date">{formattedDate}</span>
-      <br />
-      <span className="text">
+    <div className="event">
+      <div className="date">{formattedDate}</div>
+      <div className="text">
         {presentationTitle}
         {presenterNames}
-      </span>
-      <br />
-      <br />
+      </div>
+      {props.showRegisterButton && (
+        <div className="register">
+          <a href={props.event_url} target="_blank" rel="noopener noreferrer">
+            <Button text="Register" className="pt-large Event button" />
+          </a>
+        </div>
+      )}
     </div>
   );
 };
