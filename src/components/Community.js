@@ -7,7 +7,7 @@ const Community = () => {
       <p>
         Meet our members!<br />
         <br />
-        (grid of member photos goes here)
+        (Coming soon...)
       </p>
     </section>
   );

@@ -148,6 +148,11 @@
 // COMMUNITY
 #community {
   @extend %primary-section;
+  padding: 4rem;
+
+  h2 {
+    padding-bottom: 0.6rem;
+  }
 }
 
 // CODE OF CONDUCT
