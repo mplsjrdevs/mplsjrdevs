@@ -2,7 +2,7 @@
   "name": "mplsjrdevs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mplsjrdevs.github.io/mplsjrdevs",
+  "homepage": "https://mplsjrdevs.github.io",
   "dependencies": {
     "@blueprintjs/core": "^2.2.1",
     "gh-pages": "^1.1.0",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
