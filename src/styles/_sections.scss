@@ -89,7 +89,7 @@
   align-items: center;
 
   h3 {
-    padding-top: 0.6rem;
+    margin: 1rem 0;
   }
 
   .register {
@@ -99,6 +99,20 @@
     .button {
       font-weight: 600;
     }
+
+    .button.disabled {
+      background-color: $gray;
+      color: $white;
+      &:hover {
+        background-color: $light-gray;
+        color: $gray;
+      }
+
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+    }
+
     a {
       text-decoration: none;
     }
@@ -110,7 +124,7 @@
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding-top: 0.7rem;
+    padding: 0.3rem 0;
   }
 
   .date {

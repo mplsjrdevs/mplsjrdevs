@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Event from './Event';
 import eventData from '../static/eventData.json';
 import { Button, Collapse } from '@blueprintjs/core';
-import _ from 'lodash';
 import moment from 'moment';
+import _ from 'lodash';
 
 class Events extends Component {
   state = { isCollapseOpen: false };
@@ -21,10 +21,10 @@ class Events extends Component {
       upcomingEvents.length > 0 &&
       _.orderBy(upcomingEvents, 'event_date', 'asc')[0];
 
-    // only show first three most recent events by default
+    // only show three most recent events by default
     pastEvents = _.orderBy(pastEvents, 'event_date', 'desc');
-    let mostRecentEvents = pastEvents.slice(0, 3);
-    let morePastEvents = pastEvents.slice(3);
+    let recentEvents = pastEvents.slice(0, 3);
+    let moreEvents = pastEvents.slice(3);
 
     return (
       <section id="events">
@@ -40,17 +40,17 @@ class Events extends Component {
           <div>No upcoming events :(</div>
         )}
         <h3>Past Events</h3>
-        {!_.isEmpty(mostRecentEvents) ? (
-          mostRecentEvents.map(event => {
+        {!_.isEmpty(recentEvents) ? (
+          recentEvents.map(event => {
             return <Event key={event.event_date} {...event} />;
           })
         ) : (
           <div>No past events :(</div>
         )}
-        {!_.isEmpty(morePastEvents) && (
+        {!_.isEmpty(moreEvents) && (
           <div className="more-events">
             <Collapse isOpen={this.state.isCollapseOpen}>
-              {morePastEvents.map(event => {
+              {moreEvents.map(event => {
                 return <Event key={event.event_date} {...event} />;
               })}
             </Collapse>

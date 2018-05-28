@@ -1,11 +1,12 @@
 import React from 'react';
 import { Button } from '@blueprintjs/core';
 import moment from 'moment';
-import _ from 'lodash';
+import _isEmpty from 'lodash/isEmpty';
 
 const Event = props => {
-  let hasPresenters = !_.isEmpty(props.presenters);
-  let formattedDate = moment(props.event_date).format('MMM DD, YYYY');
+  let hasPresenters = !_isEmpty(props.presenters);
+  let eventDate = moment(props.event_date).startOf('day');
+  let formattedDate = eventDate.format('MMM DD, YYYY');
   let presentationTitle =
     (props.presentation_title || 'TBD') + (hasPresenters ? ', by ' : '');
   let presenterNames = '';
@@ -32,6 +33,34 @@ const Event = props => {
       .reduce((prev, curr) => [prev, ' & ', curr]);
   }
 
+  // build register button, if shown
+  let twoWeeksBeforeEvent = eventDate.subtract(14, 'day');
+  let registerButton;
+  if (props.showRegisterButton) {
+    if (
+      moment()
+        .startOf('day')
+        .isSameOrAfter(twoWeeksBeforeEvent)
+    ) {
+      registerButton = (
+        <div className="register">
+          <a href={props.event_url} target="_blank" rel="noopener noreferrer">
+            <Button text="Register" className="pt-large button" />
+          </a>
+        </div>
+      );
+    } else {
+      registerButton = (
+        <div className="register">
+          <Button
+            text={`Registration opens ${twoWeeksBeforeEvent.format('MMM Do')}`}
+            className="pt-large pt-disabled button disabled"
+          />
+        </div>
+      );
+    }
+  }
+
   return (
     <div className="event">
       <div className="date">{formattedDate}</div>
@@ -39,13 +68,7 @@ const Event = props => {
         {presentationTitle}
         {presenterNames}
       </div>
-      {props.showRegisterButton && (
-        <div className="register">
-          <a href={props.event_url} target="_blank" rel="noopener noreferrer">
-            <Button text="Register" className="pt-large Event button" />
-          </a>
-        </div>
-      )}
+      {registerButton}
     </div>
   );
 };
