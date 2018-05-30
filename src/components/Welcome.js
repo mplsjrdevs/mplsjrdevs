@@ -5,7 +5,7 @@ const Welcome = () => {
     <section id="welcome">
       <div className="overlay">
         A community of aspiring and less experienced software engineers in
-        Minneapolis/St Paul.
+        Minneapolis/St. Paul.
       </div>
     </section>
   );

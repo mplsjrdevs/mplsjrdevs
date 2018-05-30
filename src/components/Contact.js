@@ -51,14 +51,38 @@ const Contact = () => {
       <p>
         We&#39;ve got a slack group! If you identify as an aspiring or less
         experienced software engineer and would like to join, please{' '}
-        <a href="mailto:mplsjrdevs@gmail.com">email us</a>.
+        <a
+          href="mailto:mplsjrdevs@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          email us
+        </a>.
+      </p>
+      <hr />
+      <h3>Twitter</h3>
+      <p>
+        Find us on twitter at{' '}
+        <a
+          href="https://twitter.com/mplsjrdevs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @mplsjrdevs
+        </a>.
       </p>
       <hr />
       <h3>Email</h3>
       <p>
         Got questions? Please{' '}
-        <a href="mailto:mplsjrdevs@gmail.com">send us an email</a> and we&#39;ll
-        be in touch.
+        <a
+          href="mailto:mplsjrdevs@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          email us
+        </a>{' '}
+        and we&#39;ll be in touch.
       </p>
     </section>
   );
