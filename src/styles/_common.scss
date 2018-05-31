@@ -30,12 +30,14 @@ img.responsive {
 }
 
 .bg-pink,
-.DropDownMenu.bg-pink {
+.MenuDropDown.bg-pink {
   background-color: $pink;
 }
 
 .white,
-.white .pt-icon {
+.white .pt-icon,
+.Menu.white .pt-icon,
+.white .pt-button-text {
   color: $white;
 }
 
