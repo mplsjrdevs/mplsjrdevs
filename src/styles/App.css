@@ -21,3 +21,8 @@
 section p {
   padding: 20px;
 }
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+}
