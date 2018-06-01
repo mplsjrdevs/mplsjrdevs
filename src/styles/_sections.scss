@@ -32,6 +32,21 @@
   height: 40px;
 }
 
+.pt-popover-content {
+  width: 12.5rem;
+}
+
+.pt-menu.MenuDropDown {
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+
+  li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid $light-pink;
+  }
+  li:last-child { border-bottom: none; }
+}
+
 // WELCOME
 #welcome {
   background: linear-gradient(
