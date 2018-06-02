@@ -180,15 +180,31 @@
   @extend %primary-section;
   padding: 4rem;
 
-  .community-images {
-    max-width: 62.5rem;
-    margin: 0 auto;
+  .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .carousel {
+    flex: 1 1 auto;
+    background-color: $light-gray;
+  }
+
+  .community-images {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
 
     .community-image {
-      height: 200px;
+      max-height: 200px;
+      max-width: 200px;
+      height: auto;
       border-radius: 50%;
       margin: 0.5rem;
     }
