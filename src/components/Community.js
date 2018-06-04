@@ -35,7 +35,7 @@ class Community extends Component {
     // split URL pathname into an array
     let path = window.location.pathname.split('/');
 
-    // return second element in path if first element is 'community'
+    // return second part of path if first part is 'community'
     return path[1] === 'community' ? path[2] : null;
   };
 
@@ -44,7 +44,7 @@ class Community extends Component {
       <section id="community">
         <h2>Community</h2>
         <div className="flex-container">
-          <div className="carousel">
+          <div className="carousel-container">
             <img
               src={this.state.featuredPerson['image']}
               alt={this.state.featuredPerson['name']}
@@ -52,14 +52,16 @@ class Community extends Component {
             />
             <div className="bio">{this.state.featuredPerson['bio']}</div>
           </div>
-          <div className="community-images">
+          <div className="images-container">
             {communityMembers.map(person => {
               return (
                 <a
                   key={person.id}
                   href={`community/${person.id}`}
                   onClick={e => this.handleImageClick(e, person)}
+                  className="image-overlay"
                 >
+                  <div className="overlay-text">{person['name']}</div>
                   <img
                     src={person['image']}
                     alt={person['name']}
