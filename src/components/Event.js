@@ -61,6 +61,7 @@ const Event = props => {
     }
   }
 
+  //add code to render to page here?
   return (
     <div className="event">
       <div className="date">{formattedDate}</div>
