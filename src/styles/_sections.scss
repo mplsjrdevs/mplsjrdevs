@@ -1,202 +1,206 @@
 %primary-section {
-  color: $blue;
-
-  h2 {
-    color: $light-pink;
-  }
-
-  h3 {
     color: $blue;
-  }
+    h2 {
+        color: $light-pink;
+    }
+    h3 {
+        color: $blue;
+    }
 }
 
 %secondary-section {
-  background-color: $secondary;
-  color: $white;
-
-  h2 {
+    background-color: $secondary;
     color: $white;
-  }
-
-  h3 {
-    color: $light-blue;
-  }
-
-  a {
-    color: $white;
-  }
+    h2 {
+        color: $white;
+    }
+    h3 {
+        color: $light-blue;
+    }
+    a {
+        color: $white;
+    }
 }
 
 // HEADER
 .logo {
-  height: 40px;
+    height: 40px;
 }
 
 // WELCOME
 #welcome {
-  background: linear-gradient(
-      0deg,
-      rgba(0, 121, 176, 0.6) 0%,
-      rgba(0, 121, 176, 0.6)
-    ),
-    url(../images/banner.jpg) no-repeat center center / cover;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .overlay {
-    color: $white;
-    max-width: 550px;
-    padding: 20px;
-    font-size: 1.7em;
-  }
+    background: linear-gradient( 0deg, rgba(0, 121, 176, 0.6) 0%, rgba(0, 121, 176, 0.6)), url(../images/banner.jpg) no-repeat center center / cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .overlay {
+        color: $white;
+        max-width: 550px;
+        padding: 20px;
+        font-size: 1.7em;
+    }
 }
 
 // ABOUT
 #about {
-  @extend %primary-section;
-  display: flex;
-  align-items: center;
-  padding: 4rem;
-
-  .content-wrap {
-    flex-basis: 65%;
-    margin-right: 2rem;
-    text-align: left;
-
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  @media (max-width: $laptop) {
-    flex-direction: column;
-    padding: 3rem 1rem;
-
+    @extend %primary-section;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
     .content-wrap {
-      flex-basis: auto;
-      margin: 2rem 0;
+        flex-basis: 65%;
+        margin-right: 2rem;
+        text-align: left;
+        h2 {
+            margin-bottom: 1.5rem;
+        }
     }
-  }
+    @media (max-width: $laptop) {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        .content-wrap {
+            flex-basis: auto;
+            margin: 2rem 0;
+        }
+    }
 }
 
 // EVENTS
 #events {
-  @extend %secondary-section;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h3 {
-    margin: 1rem 0;
-  }
-
-  .register {
-    width: 100%;
-    padding: 1rem 0;
-
-    .button {
-      font-weight: 600;
-    }
-
-    .button.disabled {
-      background-color: $gray;
-      color: $white;
-      &:hover {
-        background-color: $light-gray;
-        color: $gray;
-      }
-
-      @media (max-width: $tablet) {
-        width: 100%;
-      }
-    }
-
-    a {
-      text-decoration: none;
-    }
-  }
-
-  .event {
+    @extend %secondary-section;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0.3rem 0;
-  }
-
-  .date {
-    font-weight: 600;
-    color: $white;
-    min-width: 100px;
-    padding-right: 5px;
-    text-align: left;
-  }
-
-  .text {
-    line-height: 1.8rem;
-    color: $light-gray;
-    width: 90%;
-
-    a {
-      color: $light-gray;
-      &:hover {
+    h3 {
+        margin: 1rem 0;
+    }
+    .register {
+        width: 100%;
+        padding: 1rem 0;
+        .button {
+            font-weight: 600;
+        }
+        .button.disabled {
+            background-color: $gray;
+            color: $white;
+            &:hover {
+                background-color: $light-gray;
+                color: $gray;
+            }
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    .event {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0.3rem 0;
+    }
+    .date {
+        font-weight: 600;
         color: $white;
-      }
+        min-width: 100px;
+        padding-right: 5px;
+        text-align: left;
     }
-  }
-
-  .more-events {
-    width: 100%;
-    padding-bottom: 1rem;
-
-    .show-events-button {
-      margin-top: 1rem;
-      font-weight: 500;
+    .text {
+        line-height: 1.8rem;
+        color: $light-gray;
+        width: 90%;
+        a {
+            color: $light-gray;
+            &:hover {
+                color: $white;
+            }
+        }
     }
-  }
+    .more-events {
+        width: 100%;
+        padding-bottom: 1rem;
+        .show-events-button {
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+    }
 }
 
 // COMMUNITY
 #community {
-  @extend %primary-section;
-  padding: 4rem;
-
-  h2 {
-    padding-bottom: 0.6rem;
-  }
+    @extend %primary-section;
+    padding: 4rem;
+    h2 {
+        padding-bottom: 0.6rem;
+    }
 }
 
 // CODE OF CONDUCT
 #code-of-conduct {
-  @extend %secondary-section;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4rem;
-
-  @media (max-width: $laptop) {
-    padding: 3rem 1rem;
-  }
-
-  .padded {
-    padding: 10px 0;
-  }
+    @extend %secondary-section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    @media (max-width: $laptop) {
+        padding: 3rem 1rem;
+    }
+    .padded {
+        padding: 10px 0;
+    }
 }
 
 // modal renders outside of #code-of-conduct
 .CodeofConduct.modal {
-  width: 90%;
-  max-width: 800px;
+    width: 90%;
+    max-width: 800px;
 }
 
 #coc-content {
-  padding: 20px;
+    padding: 20px;
 }
 
 // CONTACT
 #contact {
-  @extend %primary-section;
+    @extend %primary-section;
+}
+
+//NEW CONTACT STYLINGS
+#contact {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+}
+
+#contact .mailingList-wrap,
+.slack-wrap,
+.email-wrap {
+    flex-basis: 65%;
+    margin-right: 2rem;
+    text-align: left;
+}
+
+#contact .mailingList-wrap,
+.slack-wrap,
+.email-wrap h2 {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 960px) {
+    #contact {
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+    #contact .mailingList-wrap,
+    .slack-wrap,
+    .email-wrap {
+        flex-basis: auto;
+        margin: 2rem 0;
+    }
 }
