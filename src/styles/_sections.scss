@@ -193,16 +193,20 @@
 
   .carousel-container {
     flex: 1;
-    text-align: left;
+    min-height: 600px;
     background-color: $light-gray;
 
     img {
-      max-width: 300px;
+      max-width: 350px;
       height: auto;
       border-radius: 50%;
+      margin: 0.5rem;
     }
 
     .bio {
+      text-align: left;
+      margin: 1rem;
+      font-size: 1.2rem;
     }
   }
 

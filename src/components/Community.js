@@ -40,6 +40,7 @@ class Community extends Component {
   };
 
   render() {
+    let FeaturedBio = this.state.featuredPerson['bio'];
     return (
       <section id="community">
         <h2>Community</h2>
@@ -48,9 +49,9 @@ class Community extends Component {
             <img
               src={this.state.featuredPerson['image']}
               alt={this.state.featuredPerson['name']}
-              className="responsive left"
+              className="responsive center"
             />
-            <div className="bio">{this.state.featuredPerson['bio']}</div>
+            {this.state.featuredPerson['bio'] && <FeaturedBio />}
           </div>
           <div className="images-container">
             {communityMembers.map(person => {
@@ -84,3 +85,5 @@ class Community extends Component {
 }
 
 export default Community;
+
+// <div className="bio" dangerouslySetInnerHTML={{ __html: this.state.featuredPerson['bio']}}></div>
