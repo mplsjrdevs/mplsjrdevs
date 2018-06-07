@@ -1,22 +1,39 @@
 import React, { Component } from 'react';
-import communityMembers from '../static/communityMembers';
 import _ from 'lodash';
 
 class Community extends Component {
-  // randomly choose a community member to feature
-  state = { featuredPerson: _.sample(communityMembers) };
+  constructor(props) {
+    super(props);
+    var randomizedCommunityMembers = _.shuffle(this.props.communityMembers);
+    this.state = {
+      communityMembers: randomizedCommunityMembers,
+      featuredPerson: randomizedCommunityMembers[0]
+    };
+  }
 
   componentWillMount() {
     // set featuredPerson if present
     let personId = this.parsePersonIdFromURL();
-    let featuredPerson = personId && _.find(communityMembers, ['id', personId]);
+    let featuredPerson =
+      personId && _.find(this.state.communityMembers, ['id', personId]);
 
     if (featuredPerson) {
-      this.setState({ featuredPerson: featuredPerson });
+      this.setState({ ...this.state, featuredPerson: featuredPerson });
     } else {
-      // rotate featured person every 10 seconds
+      // rotate who's featured every 10 seconds
       this.intervalId = setInterval(() => {
-        this.setState({ featuredPerson: _.sample(communityMembers) });
+        let currIndex = _.findIndex(this.state.communityMembers, [
+          'id',
+          this.state.featuredPerson.id
+        ]);
+        let nextIndex =
+          currIndex + 1 === this.state.communityMembers.length
+            ? 0
+            : currIndex + 1;
+        this.setState({
+          ...this.state,
+          featuredPerson: this.state.communityMembers[nextIndex]
+        });
       }, 10 * 1000);
     }
   }
@@ -46,7 +63,7 @@ class Community extends Component {
             </div>
           </div>
           <div className="images-container">
-            {communityMembers.map(person => {
+            {this.state.communityMembers.map(person => {
               return (
                 <a
                   key={person.id}

@@ -40,11 +40,5 @@ export default [
     name: 'Brandon Johnson',
     image: require('../images/community/brandon-johnson.jpg'),
     bio: null
-  },
-  {
-    id: 'ian-coldwater',
-    name: 'Ian Coldwater',
-    image: require('../images/community/ian-coldwater.jpg'),
-    bio: null
   }
 ];
