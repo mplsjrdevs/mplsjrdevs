@@ -51,8 +51,8 @@
 #welcome {
   background: linear-gradient(
       0deg,
-      rgba(0, 121, 176, 0.6) 0%,
-      rgba(0, 121, 176, 0.6)
+      rgba($blue, 0.6) 0%,
+      rgba($blue, 0.6)
     ),
     url(../images/banner.jpg) no-repeat center center / cover;
   min-height: 400px;
@@ -178,10 +178,15 @@
 // COMMUNITY
 #community {
   @extend %primary-section;
-  padding: 4rem;
+  padding: 2rem;
+
+  @media (max-width: $laptop) {
+    padding: 1rem;
+  }
 
   h2 {
-    padding-bottom: 0.6rem;
+    padding-bottom: 1rem;
+    margin: 0;
   }
 
   .flex-container {
@@ -193,14 +198,20 @@
 
   .carousel-container {
     flex: 1;
-    min-height: 600px;
-    background-color: $light-gray;
+    min-height: 41rem;
+    background-color: rgba($light-gray, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem;
 
     img {
-      max-width: 350px;
+      max-width: 22rem;
       height: auto;
       border-radius: 50%;
-      margin: 0.5rem;
+      margin-bottom: 1rem;
+
+      @media (max-width: $mobile) {
+        max-width: 17rem;
+      }
     }
 
     .bio {
@@ -214,8 +225,8 @@
     display: flex;
     flex: 1;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: space-evenly;
 
     img {
       max-width: 200px;
@@ -249,8 +260,8 @@
       z-index: 1;
       background: linear-gradient(
           0deg,
-          rgba(0, 121, 176, 0.6) 0%,
-          rgba(0, 121, 176, 0.6)
+          rgba($blue, 0.6) 0%,
+          rgba($blue, 0.6)
         );
       color: $white;
       font-size: 1.2rem;
