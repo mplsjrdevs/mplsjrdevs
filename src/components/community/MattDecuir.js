@@ -10,10 +10,9 @@ const MattDecuir = () => {
     <div>
       Hi, I&#39;m Matt.<br />
       <br />
-      I&#39;m a pizza enthusiast, Seattle transplant, and an organizer of Mpls
-      Jr Devs.<br />
+      I&#39;m a self-taught Software Engineer, and an organizer of Mpls Jr Devs.<br />
       <br />
-      I&#39;m currently a Software Engineer at Granicus in St. Paul, MN.<br />
+      My areas of expertise include Ruby, Ruby on Rails, and React.<br />
       <br />
       <a
         href="https://github.com/experimatt"

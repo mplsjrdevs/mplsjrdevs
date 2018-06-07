@@ -198,10 +198,15 @@
 
   .carousel-container {
     flex: 1;
-    min-height: 41rem;
     background-color: rgba($light-gray, 0.3);
     border-radius: 0.5rem;
     padding: 1rem;
+    min-height: 41rem;
+    margin-bottom: 1rem;
+
+    @media (max-width: $tablet) {
+      min-height: 0;
+    }
 
     img {
       max-width: 22rem;
@@ -215,8 +220,7 @@
     }
 
     .bio {
-      text-align: left;
-      margin: 1rem;
+      margin: 1rem 2rem;
       font-size: 1.2rem;
     }
   }

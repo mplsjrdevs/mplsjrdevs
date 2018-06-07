@@ -23,7 +23,7 @@ class Community extends Component {
 
   componentDidMount() {
     // scroll to community section if on a community URL
-    this.parsePersonIdFromURL() && this.scrollTo('community');
+    this.parsePersonIdFromURL() && this.scrollToCommunity();
   }
 
   componentWillUnmount() {
@@ -41,7 +41,9 @@ class Community extends Component {
               alt={this.state.featuredPerson['name']}
               className="responsive center"
             />
-            {this.componentizedBio(this.state.featuredPerson)}
+            <div className="bio">
+              {this.componentizedBio(this.state.featuredPerson)}
+            </div>
           </div>
           <div className="images-container">
             {communityMembers.map(person => {
@@ -71,7 +73,7 @@ class Community extends Component {
     e.preventDefault();
     this.setState({ ...this.state, featuredPerson: person });
     window.history.pushState(null, '', `/community/${person.id}`);
-    this.scrollTo('community');
+    this.scrollToCommunity();
     clearInterval(this.intervalId);
   };
 
@@ -81,23 +83,22 @@ class Community extends Component {
     return pathName[1] === 'community' ? pathName[2] : null;
   };
 
-  scrollTo(location) {
+  scrollToCommunity() {
     // wait until document is loaded before scrolling
     if (
       window.document &&
       typeof window.document.createElement === 'function'
     ) {
-      window.document.getElementById(location).scrollIntoView(true);
+      window.document.getElementById('community').scrollIntoView(true);
     }
   }
 
   componentizedBio = person => {
+    // return bio if present, or "Hi, I'm person"
     if (person['bio']) {
-      // import bio component if present and return it
       let FeaturedBio = person['bio'];
       return <FeaturedBio />;
     } else {
-      // otherwise, return "Hi, I'm person"
       let firstName = person['name'].slice(0, person['name'].indexOf(' '));
       return <div>{`Hi, I'm ${firstName}.`}</div>;
     }
