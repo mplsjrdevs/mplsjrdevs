@@ -51,8 +51,8 @@
 #welcome {
   background: linear-gradient(
       0deg,
-      rgba(0, 121, 176, 0.6) 0%,
-      rgba(0, 121, 176, 0.6)
+      rgba($blue, 0.6) 0%,
+      rgba($blue, 0.6)
     ),
     url(../images/banner.jpg) no-repeat center center / cover;
   min-height: 400px;
@@ -178,10 +178,102 @@
 // COMMUNITY
 #community {
   @extend %primary-section;
-  padding: 4rem;
+  padding: 2rem;
+
+  @media (max-width: $laptop) {
+    padding: 1rem;
+  }
 
   h2 {
-    padding-bottom: 0.6rem;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .carousel-container {
+    flex: 1;
+    background-color: rgba($light-gray, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-height: 41rem;
+    margin-bottom: 1rem;
+
+    @media (max-width: $tablet) {
+      min-height: 0;
+    }
+
+    img {
+      max-width: 22rem;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+
+      @media (max-width: $mobile) {
+        max-width: 17rem;
+      }
+    }
+
+    .bio {
+      margin: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .images-container {
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+
+    img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .image-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      margin: 0.5rem;
+    }
+
+    .overlay-text {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.25s;
+      z-index: 1;
+      background: linear-gradient(
+          0deg,
+          rgba($blue, 0.6) 0%,
+          rgba($blue, 0.6)
+        );
+      color: $white;
+      font-size: 1.2rem;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }
 
