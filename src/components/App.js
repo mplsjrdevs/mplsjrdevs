@@ -8,7 +8,6 @@ import Events from './Events';
 import Community from './Community';
 import CodeOfConduct from './CodeOfConduct';
 import Contact from './Contact';
-import communityMembers from '../static/communityMembers';
 import '../styles/App.css';
 
 class App extends Component {
@@ -23,7 +22,7 @@ class App extends Component {
         <Welcome />
         <About />
         <Events />
-        <Community communityMembers={communityMembers} />
+        <Community />
         <CodeOfConduct />
         <Contact />
       </div>

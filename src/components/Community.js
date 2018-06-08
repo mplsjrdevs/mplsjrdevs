@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import communityMembers from '../static/communityMembers';
 import _ from 'lodash';
 
 class Community extends Component {
-  constructor(props) {
-    super(props);
-    var randomizedCommunityMembers = _.shuffle(this.props.communityMembers);
+  constructor() {
+    super();
+    var randomizedCommunityMembers = _.shuffle(communityMembers);
     this.state = {
       communityMembers: randomizedCommunityMembers,
       featuredPerson: randomizedCommunityMembers[0]
@@ -12,7 +13,7 @@ class Community extends Component {
   }
 
   componentWillMount() {
-    // set featuredPerson if present
+    // set featuredPerson if present in URL
     let personId = this.parsePersonIdFromURL();
     let featuredPerson =
       personId && _.find(this.state.communityMembers, ['id', personId]);
@@ -59,7 +60,7 @@ class Community extends Component {
               className="responsive center"
             />
             <div className="bio">
-              {this.componentizedBio(this.state.featuredPerson)}
+              {this.renderBio(this.state.featuredPerson)}
             </div>
           </div>
           <div className="images-container">
@@ -88,10 +89,10 @@ class Community extends Component {
 
   handleImageClick = (e, person) => {
     e.preventDefault();
-    this.setState({ ...this.state, featuredPerson: person });
     window.history.pushState(null, '', `/community/${person.id}`);
-    this.scrollToCommunity();
     clearInterval(this.intervalId);
+    this.scrollToCommunity();
+    this.setState({ ...this.state, featuredPerson: person });
   };
 
   parsePersonIdFromURL = () => {
@@ -110,7 +111,7 @@ class Community extends Component {
     }
   }
 
-  componentizedBio = person => {
+  renderBio = person => {
     // return bio if present, or "Hi, I'm person"
     if (person['bio']) {
       let FeaturedBio = person['bio'];
