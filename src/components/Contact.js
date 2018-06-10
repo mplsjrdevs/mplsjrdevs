@@ -25,7 +25,6 @@ const Contact = () => {
               placeholder="email address"
               required
             />{' '}
-            {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
             <div id="mc_hidden" aria-hidden="true">
               <input
                 type="text"
