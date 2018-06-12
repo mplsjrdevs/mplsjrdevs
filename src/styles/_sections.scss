@@ -152,7 +152,6 @@
 // COMMUNITY
 #community {
     @extend %primary-section;
-    padding: 2rem;
     @media (max-width: $laptop) {
         padding: 1rem;
     }
@@ -231,50 +230,78 @@
                 opacity: 1;
             }
         }
+        padding: 4rem;
+        h2 {
+            padding-bottom: 0.6rem;
+        }
     }
-}
-
-// CODE OF CONDUCT
-#code-of-conduct {
-    @extend %secondary-section;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem;
-    @media (max-width: $laptop) {
-        padding: 3rem 1rem;
+    // CODE OF CONDUCT
+    #code-of-conduct {
+        @extend %secondary-section;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        @media (max-width: $laptop) {
+            padding: 3rem 1rem;
+        }
+        .padded {
+            padding: 10px 0;
+        }
     }
-    .padded {
-        padding: 10px 0;
+    // modal renders outside of #code-of-conduct
+    .CodeofConduct.modal {
+        width: 90%;
+        max-width: 800px;
     }
-}
-
-// modal renders outside of #code-of-conduct
-.CodeofConduct.modal {
-    width: 90%;
-    max-width: 800px;
-}
-
-#coc-content {
-    padding: 20px;
-}
-
-// CONTACT
-#contact {
-    @extend %primary-section;
-}
-
-.contact-wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.mailing-left,
-.slack-left,
-.twitter-right,
-.email-right {
-    flex: 1 0 20%;
-    margin: 5px;
-    height: 100px;
-    border-right: 1px solid $light-pink;
+    #coc-content {
+        padding: 20px;
+    }
+    // CONTACT
+    #contact {
+        @extend %primary-section;
+    }
+    .contact-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mailing-left,
+    .slack-left,
+    .twitter-right,
+    .email-right {
+        flex: 1 0 20%;
+        margin: 5px;
+        height: 100px;
+        border-right: 1px solid $light-pink;
+    }
+    //NEW CONTACT STYLINGS
+    #contact {
+        display: flex;
+        align-items: center;
+        padding: 4rem;
+    }
+    #contact .mailingList-wrap,
+    .slack-wrap,
+    .email-wrap {
+        flex-basis: 65%;
+        margin-right: 2rem;
+        text-align: left;
+    }
+    #contact .mailingList-wrap,
+    .slack-wrap,
+    .email-wrap h2 {
+        margin-bottom: 1.5rem;
+    }
+    @media (max-width: 960px) {
+        #contact {
+            flex-direction: column;
+            padding: 3rem 1rem;
+        }
+        #contact .mailingList-wrap,
+        .slack-wrap,
+        .email-wrap {
+            flex-basis: auto;
+            margin: 2rem 0;
+        }
+    }
 }
