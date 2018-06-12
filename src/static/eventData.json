@@ -204,30 +204,30 @@
   {
     "event_date": "2018-07-10",
     "event_title": "Mpls Jr Devs #14",
-    "event_url": "",
+    "event_url": "https://mplsjrdevs14.eventbrite.com",
     "event_location": "Prime",
-    "presentation_format": "",
-    "presentation_title": "TBD",
+    "presentation_format": "30 min",
+    "presentation_title": "Intro to Software Estimation",
     "presentation_url": "",
     "presenters": [
       {
-        "name": "TBD",
-        "url": ""
+        "name": "James Voss Grumish",
+        "url": "https://twitter.com/JamesVG"
       }
     ]
   },
   {
     "event_date": "2018-08-14",
     "event_title": "Mpls Jr Devs #15",
-    "event_url": "",
+    "event_url": "https://mplsjrdevs15.eventbrite.com",
     "event_location": "Prime",
-    "presentation_format": "",
-    "presentation_title": "TBD",
+    "presentation_format": "45 min",
+    "presentation_title": "Intro to Command Line",
     "presentation_url": "",
     "presenters": [
       {
-        "name": "TBD",
-        "url": ""
+        "name": "Jenna Pederson",
+        "url": "https://twitter.com/jennapederson"
       }
     ]
   },
