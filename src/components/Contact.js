@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact">
       <h2>Contact</h2>
       <div className="contact-wrap">
-        <div className="mailing-left">
+        <div className="mailing-left border-right">
           <h3>Mailing list</h3>
           <p>We&#39;ll only email you to announce upcoming events.</p>
           <div id="mc_embed_signup">
@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
 
         <hr />
-        <div className="slack-left">
+        <div className="slack-left border-right">
           <h3>Slack</h3>
           <p>
             We&#39;ve got a slack group! If you identify as an aspiring or less
@@ -65,7 +65,7 @@ const Contact = () => {
           </p>
         </div>
         <hr />
-        <div className="twitter-right">
+        <div className="twitter-right border-right">
           <h3>Twitter</h3>
           <p>
             Find us on twitter at{' '}
