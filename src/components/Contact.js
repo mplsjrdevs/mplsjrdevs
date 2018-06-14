@@ -1,4 +1,9 @@
 import React from 'react';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+//import  from '@fortawesome/fontawesome-free-brands/faCamera';
+import faSlack from '@fortawesome/fontawesome-free-brands/faSlack';
+import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
+//import email from '@fortawesome/fontawesome-free-solid/faEnvelope';
 
 const Contact = () => {
   return (
@@ -51,7 +56,7 @@ const Contact = () => {
 
         <hr />
         <div className="slack-left border-right">
-          <h3>Slack</h3>
+          <FontAwesomeIcon icon={faSlack} size="2x" />
           <p>
             We&#39;ve got a slack group! If you identify as an aspiring or less
             experienced software engineer and would like to join, please{' '}
@@ -66,7 +71,8 @@ const Contact = () => {
         </div>
         <hr />
         <div className="twitter-right border-right">
-          <h3>Twitter</h3>
+          <FontAwesomeIcon icon={faTwitter} size="2x" />
+
           <p>
             Find us on twitter at{' '}
             <a

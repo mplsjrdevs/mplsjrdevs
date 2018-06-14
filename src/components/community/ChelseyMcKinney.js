@@ -3,7 +3,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
-import faLink from '@fortawesome/fontawesome-free-solid/faLink';
+//import faLink from '@fortawesome/fontawesome-free-solid/faLink';
 
 const ChelseyMcKinney = () => {
   return (
