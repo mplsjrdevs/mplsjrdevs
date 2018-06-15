@@ -52,7 +52,11 @@
 
 // WELCOME
 #welcome {
-  background: linear-gradient(0deg, rgba($blue, 0.6) 0%, rgba($blue, 0.6)),
+  background: linear-gradient(
+    0deg,
+    rgba($blue, 0.6) 0%,
+    rgba($blue, 0.6)
+    ),
     url(../images/banner.jpg) no-repeat center center / cover;
   min-height: 400px;
   display: flex;
@@ -79,6 +83,7 @@
     flex-basis: 65%;
     margin-right: 2rem;
     text-align: left;
+
     h2 {
       margin-bottom: 1.5rem;
     }
@@ -101,30 +106,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h3 {
     margin: 1rem 0;
   }
+
   .register {
     width: 100%;
     padding: 1rem 0;
+
     .button {
       font-weight: 600;
     }
+
     .button.disabled {
       background-color: $gray;
       color: $white;
+
       &:hover {
         background-color: $light-gray;
         color: $gray;
       }
+
       @media (max-width: $tablet) {
         width: 100%;
       }
     }
+
     a {
       text-decoration: none;
     }
   }
+
   .event {
     display: flex;
     flex-direction: column;
@@ -133,6 +146,7 @@
     margin: 0 auto;
     padding: 0.3rem 0;
   }
+
   .date {
     font-weight: 600;
     color: $white;
@@ -140,20 +154,25 @@
     padding-right: 5px;
     text-align: left;
   }
+
   .text {
     line-height: 1.8rem;
     color: $light-gray;
     width: 90%;
+
     a {
       color: $light-gray;
+
       &:hover {
         color: $white;
       }
     }
   }
+
   .more-events {
     width: 100%;
     padding-bottom: 1rem;
+
     .show-events-button {
       margin-top: 1rem;
       font-weight: 500;
@@ -164,6 +183,7 @@
 // COMMUNITY
 #community {
   @extend %primary-section;
+  padding: 2rem;
 
   @media (max-width: $laptop) {
     padding: 1rem;
@@ -198,6 +218,7 @@
       height: auto;
       border-radius: 50%;
       margin-bottom: 1rem;
+
       @media (max-width: $mobile) {
         max-width: 17rem;
       }
@@ -246,7 +267,11 @@
       opacity: 0;
       transition: opacity 0.25s;
       z-index: 1;
-      background: linear-gradient(0deg, rgba($blue, 0.6) 0%, rgba($blue, 0.6));
+      background: linear-gradient(
+        0deg,
+        rgba($blue, 0.6) 0%,
+        rgba($blue, 0.6)
+      );
       color: $white;
       font-size: 1.2rem;
 
@@ -264,7 +289,6 @@
 // CODE OF CONDUCT
 #code-of-conduct {
   @extend %secondary-section;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,7 +316,6 @@
 // CONTACT
 #contact {
   @extend %primary-section;
-
   display: flex;
   flex-direction: column;
   align-items: center;
