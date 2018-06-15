@@ -13,7 +13,7 @@ class Events extends Component {
     let [pastEvents, upcomingEvents] = _.partition(eventData, event => {
       return moment(event.event_date)
         .startOf('day')
-        .isSameOrBefore(moment().startOf('day'));
+        .isBefore(moment().startOf('day'));
     });
 
     // next event
