@@ -3,7 +3,7 @@ export default [
     id: 'chelsey-mckinney',
     name: 'Chelsey McKinney',
     image: require('../images/community/chelsey-mckinney.jpg'),
-    bio: null
+    bio: require('../components/community/ChelseyMcKinney').default
   },
   {
     id: 'garret-saarinen',
