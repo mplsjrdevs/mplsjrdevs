@@ -9,8 +9,8 @@ const Contact = () => {
   return (
     <section id="contact">
       <h2>Contact</h2>
-      <div className="contact-wrap">
-        <div className="mailing-left border-right">
+      <div className="flex-container">
+        <div className="contact-method">
           <FontAwesomeIcon icon={faEnvelope} size="4x" />
           <div className="contact-text">
             Join our mailing list for event announcements.
@@ -42,22 +42,20 @@ const Contact = () => {
                     value=""
                   />
                 </div>
-                <div className="clear">
-                  <input
-                    type="submit"
-                    value="Subscribe"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    className="button"
-                  />
-                </div>
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  className="button"
+                />
               </div>
             </form>
           </div>
         </div>
 
-        <hr />
-        <div className="slack-left border-right">
+        <div className="divider" />
+        <div className="contact-method">
           <FontAwesomeIcon icon={faSlack} size="4x" />
           <div className="contact-text">
             If you identify as a junior dev and would like to join our slack,
@@ -71,8 +69,8 @@ const Contact = () => {
             </a>.
           </div>
         </div>
-        <hr />
-        <div className="twitter-right border-right">
+        <div className="divider" />
+        <div className="contact-method">
           <FontAwesomeIcon icon={faTwitter} size="4x" />
 
           <div className="contact-text">
@@ -86,8 +84,8 @@ const Contact = () => {
             </a>.
           </div>
         </div>
-        <hr />
-        <div className="email-right">
+        <div className="divider" />
+        <div className="contact-method">
           <FontAwesomeIcon icon={faQuestion} size="4x" />
           <div className="contact-text">
             Got questions?<br />
