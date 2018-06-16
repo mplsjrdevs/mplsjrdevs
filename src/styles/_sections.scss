@@ -66,7 +66,6 @@
   .overlay {
     color: $white;
     max-width: 550px;
-    padding: 20px;
     font-size: 1.7em;
     text-shadow: 0 1px 0 black;
   }
@@ -312,9 +311,7 @@
     align-items: flex-start;
 
     @media (max-width: $laptop) {
-      display: flex;
       flex-flow: column wrap;
-      justify-content: space-evenly;
       align-items: center;
     }
   }
@@ -335,7 +332,7 @@
       border-right: none;
       border-bottom: 2px solid $light-pink;
       height: 0;
-      width: 50%;
+      width: 35%;
       margin: 0.6rem 0;
     }
   }

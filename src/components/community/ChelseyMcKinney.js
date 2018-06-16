@@ -11,8 +11,8 @@ const ChelseyMcKinney = () => {
       <br />
       I&#39;m a junior dev originally from Tennessee.<br />
       <br />
-      My areas of expertise include the MERN(Mongo,Express,React,Node) stack,
-      Books, and Solving Mysteries.<br />
+      My areas of expertise include the MERN (Mongo, Express, React, Node)
+      stack, books, and solving mysteries.<br />
       <br />
       <a
         href="https://github.com/camckin10"
