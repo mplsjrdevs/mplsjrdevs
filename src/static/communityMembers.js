@@ -15,7 +15,7 @@ export default [
     id: 'jenessa-white',
     name: 'Jenessa White',
     image: require('../images/community/jenessa-white.jpg'),
-    bio: null
+    bio: require('../components/community/JenessaWhite').default
   },
   {
     id: 'matt-decuir',
