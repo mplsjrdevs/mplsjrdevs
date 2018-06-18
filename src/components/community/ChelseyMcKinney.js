@@ -3,7 +3,6 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
-//import faLink from '@fortawesome/fontawesome-free-solid/faLink';
 
 const ChelseyMcKinney = () => {
   return (
@@ -12,8 +11,8 @@ const ChelseyMcKinney = () => {
       <br />
       I&#39;m a junior dev originally from Tennessee.<br />
       <br />
-      My areas of expertise include the MERN(Mongo,Express,React,Node) stack,
-      Books, and Solving Mysteries.<br />
+      My areas of expertise include the MERN (Mongo, Express, React, Node)
+      stack, books, and solving mysteries.<br />
       <br />
       <a
         href="https://github.com/camckin10"

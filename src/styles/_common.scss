@@ -6,7 +6,11 @@ body {
 }
 
 section {
-  padding: 20px;
+  padding: 4rem;
+
+  @media (max-width: $laptop) {
+    padding: 3rem 1rem;
+  }
 }
 
 a {
@@ -75,7 +79,8 @@ img.responsive {
   }
 
   @media (max-width: $tablet) {
-    width: 100%;
+    width: 90%;
+    max-width: 400px;
   }
 }
 
@@ -87,6 +92,19 @@ img.responsive {
 #mc_embed_signup {
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
+
+  input.email {
+    width: 90%;
+    max-width: 400px;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+}
+
+#mc-embedded-subscribe.button {
+  margin-top: 0.6rem;
 }
 
 #mc_hidden {

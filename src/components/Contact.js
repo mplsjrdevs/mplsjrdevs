@@ -1,18 +1,20 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-//import  from '@fortawesome/fontawesome-free-brands/faCamera';
+import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
 import faSlack from '@fortawesome/fontawesome-free-brands/faSlack';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
-//import email from '@fortawesome/fontawesome-free-solid/faEnvelope';
+import faQuestion from '@fortawesome/fontawesome-free-solid/faQuestion';
 
 const Contact = () => {
   return (
     <section id="contact">
       <h2>Contact</h2>
-      <div className="contact-wrap">
-        <div className="mailing-left border-right">
-          <h3>Mailing list</h3>
-          <p>We&#39;ll only email you to announce upcoming events.</p>
+      <div className="flex-container">
+        <div className="contact-method">
+          <FontAwesomeIcon icon={faEnvelope} size="4x" />
+          <div className="contact-text">
+            Join our mailing list for event announcements.
+          </div>
           <div id="mc_embed_signup">
             <form
               action="https://mplsjrdevs.us15.list-manage.com/subscribe/post?u=15e9ff6a082fef90507e7abca&amp;id=8fbf9281ef"
@@ -40,26 +42,24 @@ const Contact = () => {
                     value=""
                   />
                 </div>
-                <div className="clear">
-                  <input
-                    type="submit"
-                    value="Subscribe"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    className="button"
-                  />
-                </div>
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  className="button"
+                />
               </div>
             </form>
           </div>
         </div>
 
-        <hr />
-        <div className="slack-left border-right">
-          <FontAwesomeIcon icon={faSlack} size="2x" />
-          <p>
-            We&#39;ve got a slack group! If you identify as an aspiring or less
-            experienced software engineer and would like to join, please{' '}
+        <div className="divider" />
+        <div className="contact-method">
+          <FontAwesomeIcon icon={faSlack} size="4x" />
+          <div className="contact-text">
+            If you identify as a junior dev and would like to join our slack,
+            please{' '}
             <a
               href="mailto:mplsjrdevs@gmail.com"
               target="_blank"
@@ -67,14 +67,14 @@ const Contact = () => {
             >
               email us
             </a>.
-          </p>
+          </div>
         </div>
-        <hr />
-        <div className="twitter-right border-right">
-          <FontAwesomeIcon icon={faTwitter} size="2x" />
+        <div className="divider" />
+        <div className="contact-method">
+          <FontAwesomeIcon icon={faTwitter} size="4x" />
 
-          <p>
-            Find us on twitter at{' '}
+          <div className="contact-text">
+            Find us at{' '}
             <a
               href="https://twitter.com/mplsjrdevs"
               target="_blank"
@@ -82,22 +82,23 @@ const Contact = () => {
             >
               @mplsjrdevs
             </a>.
-          </p>
+          </div>
         </div>
-        <hr />
-        <div className="email-right">
-          <h3>Email</h3>
-          <p>
-            Got questions? Please{' '}
+        <div className="divider" />
+        <div className="contact-method">
+          <FontAwesomeIcon icon={faQuestion} size="4x" />
+          <div className="contact-text">
+            Got questions?<br />
+            <br />
             <a
               href="mailto:mplsjrdevs@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              email us
+              Email us
             </a>{' '}
             and we&#39;ll be in touch.
-          </p>
+          </div>
         </div>
       </div>
     </section>
