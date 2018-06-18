@@ -219,15 +219,15 @@
   {
     "event_date": "2018-08-14",
     "event_title": "Mpls Jr Devs #15",
-    "event_url": "https://mplsjrdevs15.eventbrite.com",
+    "event_url": "",
     "event_location": "Prime",
-    "presentation_format": "45 min",
-    "presentation_title": "Intro to Command Line",
+    "presentation_format": "",
+    "presentation_title": "TBD",
     "presentation_url": "",
     "presenters": [
       {
-        "name": "Jenna Pederson",
-        "url": "https://twitter.com/jennapederson"
+        "name": "TBD",
+        "url": ""
       }
     ]
   },
