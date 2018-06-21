@@ -39,6 +39,9 @@ export default [
     id: 'brandon-johnson',
     name: 'Brandon Johnson',
     image: require('../images/community/brandon-johnson.jpg'),
+    twitter: 'https://twitter.com/brandon_mn',
+    website: 'http://brandon.mn',
+    github: 'https://github.com/skylineproject',
     bio: null
   }
 ];
