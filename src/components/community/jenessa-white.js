@@ -7,8 +7,10 @@ import faReact from '@fortawesome/fontawesome-free-brands/faReact';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 import faWordpress from '@fortawesome/fontawesome-free-brands/faWordpress';
 
-const JenessaWhite = () => {
-  return (
+export default {
+  id: 'jenessa-white',
+  name: 'Jenessa White',
+  bio: () => (
     <div>
       Hey I&#39;m Jenessa!<br />
       <br />
@@ -64,7 +66,5 @@ const JenessaWhite = () => {
         <FontAwesomeIcon icon={faLink} size="2x" />
       </a>
     </div>
-  );
+  )
 };
-
-export default JenessaWhite;

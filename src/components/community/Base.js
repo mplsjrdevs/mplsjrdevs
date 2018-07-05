@@ -12,16 +12,16 @@ const Social = ({ icon, url }) => (
   </a>
 );
 
-export default ({ name, github, linkedIn, twitter, website }) => {
+export default ({ name, bio: Bio, github, linkedin, twitter, website }) => {
   const links = [
     website && <Social key={0} icon={faLink} url={website} />,
     github && <Social key={1} icon={faGithub} url={github} />,
     twitter && <Social key={2} icon={faTwitter} url={twitter} />,
-    linkedIn && <Social key={3} icon={faLinkedIn} url={linkedIn} />
+    linkedin && <Social key={3} icon={faLinkedIn} url={linkedin} />
   ];
   return (
     <div>
-      <p>{`Hi, I'm ${name}.`}</p>
+      <p>{Bio ? <Bio /> : `Hi, I'm ${name}.`}</p>
       {links.reduce((prev, curr) => [
         prev,
         <span>&nbsp;&nbsp;&nbsp;</span>,

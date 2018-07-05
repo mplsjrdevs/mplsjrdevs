@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import communityMembers from '../static/communityMembers';
+import communityMembers from './community';
 import BaseMember from './community/Base';
 import _ from 'lodash';
 
@@ -113,14 +113,8 @@ class Community extends Component {
   }
 
   renderBio = person => {
-    // return bio if present, or "Hi, I'm person"
-    if (person['bio']) {
-      let FeaturedBio = person['bio'];
-      return <FeaturedBio />;
-    } else {
-      let firstName = person['name'].slice(0, person['name'].indexOf(' '));
-      return <BaseMember {...person} name={firstName} />;
-    }
+    let firstName = person['name'].slice(0, person['name'].indexOf(' '));
+    return <BaseMember {...person} name={firstName} />;
   };
 }
 
