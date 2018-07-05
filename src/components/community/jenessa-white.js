@@ -45,7 +45,7 @@ export default {
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>&nbsp;&nbsp;&nbsp;
       <a
-        href="https://twitter.com/jnessview"
+        href="http://twitter.com/jnessview"
         target="_blank"
         rel="noopener noreferrer"
       >
