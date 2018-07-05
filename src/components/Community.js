@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import communityMembers from './community';
+import communityMembers from './community/index.js';
 import BaseMember from './community/Base';
 import _ from 'lodash';
 
