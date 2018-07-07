@@ -13,8 +13,7 @@ export default {
       <br />
       I&#39;m a self-taught Software Engineer, and an organizer of Mpls Jr Devs.<br />
       <br />
-      My areas of expertise include Ruby, Ruby on Rails, and React.<br />
-      <br />
+      My areas of expertise include Ruby, Ruby on Rails, and React.
     </div>
   )
 };
