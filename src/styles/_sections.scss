@@ -226,6 +226,18 @@
         color: $light-blue;
         transition: 300ms ease-in-out all;
       }
+
+      .social-links {
+        padding-top: 1.2rem;
+      }
+
+      .social-link {
+        padding-right: 1rem;
+      }
+
+      .social-link:last-child {
+          padding-right: 0;
+        }
     }
   }
 

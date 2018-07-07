@@ -11,8 +11,7 @@ export default {
       Hi, I&#39;m Adriana!<br />
       <br />
       I&#39;m studying graphic design at the UofM, and am also learning
-      front-end web development on the side.<br />
-      <br />
+      front-end web development on the side.
     </div>
   )
 };

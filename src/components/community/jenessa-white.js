@@ -37,34 +37,40 @@ export default {
           )
         </li>
       </ul>
-      <a
-        href="https://github.com/jenessawhite"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faGithub} size="2x" />
-      </a>&nbsp;&nbsp;&nbsp;
-      <a
-        href="http://twitter.com/jnessview"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
-      </a>&nbsp;&nbsp;&nbsp;
-      <a
-        href="https://instagram.com/thenessview"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </a>&nbsp;&nbsp;&nbsp;
-      <a
-        href="https://jenessawhite.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faLink} size="2x" />
-      </a>
+      <div className="social-links">
+        <a
+          href="https://github.com/jenessawhite"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+        </a>
+        <a
+          href="http://twitter.com/jnessview"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <FontAwesomeIcon icon={faTwitter} size="2x" />
+        </a>
+        <a
+          href="https://instagram.com/thenessview"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
+        </a>
+        <a
+          href="https://jenessawhite.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <FontAwesomeIcon icon={faLink} size="2x" />
+        </a>
+      </div>
     </div>
   )
 };
