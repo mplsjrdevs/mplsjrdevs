@@ -11,7 +11,7 @@ export default {
     <div>
       Hi, I&#39;m Kam.<br />
       <br />
-      I&#39;m a graudate of Prime Digital Academy. Previously life was in
+      I&#39;m a graduate of Prime Digital Academy. Previously life was in
       architecture. I am an organizer of Mpls Jr Devs and TEDxMinneapolis.<br />
       <br />
       My areas of expertise include Node.js, Express, Angular, and React.
