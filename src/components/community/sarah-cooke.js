@@ -1,18 +1,19 @@
+import React from 'react';
+
 export default {
   id: 'sarah-cooke',
   name: 'Sarah Cooke',
   twitter: 'https://twitter.com/marshcooke',
-  website: 'http://example.com',
-  github: 'https://github.com/username',
+  website: 'http://sarahcooke.me',
+  github: 'https://github.com/marshcooke',
   linkedin: 'https://www.linkedin.com/in/sarahmcooke/',
   bio: () => (
     <div>
-      Hey, I&#39;m Sarah.
+      Hey, I&#39;m Sarah!
       <br />
       <br />
-      I started out as self-taught but graduated from Prime Digital Academy. I
-      currently work as a technical support engineer, and am an organizer of
-      MplsJrDevs.
+      I am a graduate of Prime Digital Academy. I work as a technical support
+      engineer, and am an organizer of MplsJrDevs.
     </div>
   )
 };
