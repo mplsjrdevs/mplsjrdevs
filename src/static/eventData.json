@@ -219,47 +219,43 @@
   {
     "event_date": "2018-08-14",
     "event_title": "Mpls Jr Devs #15",
-    "event_url": "",
+    "event_url": "https://mplsjrdevs15.eventbrite.com",
     "event_location": "Prime",
-    "presentation_format": "",
-    "presentation_title": "TBD",
+    "presentation_format": "30 min",
+    "presentation_title": "Intro to CI & CD",
     "presentation_url": "",
     "presenters": [
       {
-        "name": "TBD",
-        "url": ""
+        "name": "Tessa Kriesel",
+        "url": "https://twitter.com/tessak22"
       }
     ]
   },
   {
     "event_date": "2018-09-11",
     "event_title": "Mpls Jr Devs #16",
-    "event_url": "",
+    "event_url": "https://mplsjrdevs16.eventbrite.com",
     "event_location": "Prime",
-    "presentation_format": "",
-    "presentation_title": "TBD",
+    "presentation_format": "30 min",
+    "presentation_title":
+      "A Hiring Manager's Perspective on the Jr Dev Hiring Process",
     "presentation_url": "",
     "presenters": [
       {
-        "name": "TBD",
+        "name": "Nohemi Feltl",
         "url": ""
       }
     ]
   },
   {
-    "event_date": "2018-10-09",
+    "event_date": "2018-10-04",
     "event_title": "Mpls Jr Devs #17",
     "event_url": "",
     "event_location": "Prime",
     "presentation_format": "",
-    "presentation_title": "TBD",
+    "presentation_title": "Mpls Jr Devs Happy Hour",
     "presentation_url": "",
-    "presenters": [
-      {
-        "name": "TBD",
-        "url": ""
-      }
-    ]
+    "presenters": []
   },
   {
     "event_date": "2018-11-13",
@@ -267,12 +263,12 @@
     "event_url": "",
     "event_location": "Prime",
     "presentation_format": "",
-    "presentation_title": "TBD",
+    "presentation_title": "Intro to Object-Oriented Programming",
     "presentation_url": "",
     "presenters": [
       {
-        "name": "TBD",
-        "url": ""
+        "name": "Antoinette Smith",
+        "url": "https://twitter.com/ant_auth"
       }
     ]
   },

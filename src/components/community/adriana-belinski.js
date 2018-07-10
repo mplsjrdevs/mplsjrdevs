@@ -10,8 +10,8 @@ export default {
     <div>
       Hi, I&#39;m Adriana!<br />
       <br />
-      I&#39;m studying graphic design at the UofM, and am also learning
-      front-end web development on the side.
+      I&#39;m a graphic designer with a dash of front-end development.<br /> I
+      like to illustrate and listen to podcasts.
     </div>
   )
 };
