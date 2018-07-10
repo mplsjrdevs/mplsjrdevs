@@ -13,7 +13,7 @@ export default {
       <br />
       <br />
       I am a graduate of Prime Digital Academy. I work as a technical support
-      engineer, and am an organizer of MplsJrDevs.
+      engineer at Kipsu, and am an organizer of MplsJrDevs.
     </div>
   )
 };
