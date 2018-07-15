@@ -21,6 +21,10 @@ src/**/*.css
 .env.test.local
 .env.production.local
 
+# ignore npm files -- this project uses yarn
+package-lock.json*
 npm-debug.log*
+
+# debug logs
 yarn-debug.log*
 yarn-error.log*

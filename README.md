@@ -8,7 +8,7 @@ This project was bootstrapped using [Create React App](https://github.com/facebo
 ## Prerequisites
 
   1. [Node](https://nodejs.org/en/) installed
-  2. [Yarn](https://yarnpkg.com/en/docs/install) or [NPM](https://www.npmjs.com/get-npm) installed
+  2. [Yarn](https://yarnpkg.com/en/docs/install) installed
 
 ## Development Instructions
 
