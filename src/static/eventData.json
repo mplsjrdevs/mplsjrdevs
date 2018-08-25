@@ -226,8 +226,8 @@
     "presentation_url": "",
     "presenters": [
       {
-        "name": "Tessa Kriesel",
-        "url": "https://twitter.com/tessak22"
+        "name": "Brandon Johnson",
+        "url": "https://twitter.com/brandon_mn"
       }
     ]
   },
@@ -243,7 +243,7 @@
     "presenters": [
       {
         "name": "Nohemi Feltl",
-        "url": ""
+        "url": "https://www.linkedin.com/in/nohemifeltl/"
       }
     ]
   },
@@ -269,21 +269,6 @@
       {
         "name": "Antoinette Smith",
         "url": "https://twitter.com/ant_auth"
-      }
-    ]
-  },
-  {
-    "event_date": "2018-12-11",
-    "event_title": "Mpls Jr Devs #19",
-    "event_url": "",
-    "event_location": "Prime",
-    "presentation_format": "",
-    "presentation_title": "TBD",
-    "presentation_url": "",
-    "presenters": [
-      {
-        "name": "TBD",
-        "url": ""
       }
     ]
   }
