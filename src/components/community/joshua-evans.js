@@ -11,7 +11,7 @@ export default {
         Hello! I&#39;m Josh.
         <br />
         <br />
-        I'm a recent graduate of Prime Digital Academy.
+        I&#39;m a recent graduate of Prime Digital Academy.
         <br />
         <br />
         Prior to attending Prime I graduated from Winona State University with a
@@ -32,7 +32,7 @@ export default {
           <li>PostgreSQL</li>
         </ul>
         <br />
-        Currently, I'm flirting with few different technologies, including
+        Currently, I&#39;m flirting with few different technologies, including
         Python with Flask, SQLite, Ruby with Jekyll, Kotlin and C#.
       </div>
     );
