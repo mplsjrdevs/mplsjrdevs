@@ -249,11 +249,11 @@
   },
   {
     "event_date": "2018-10-04",
-    "event_title": "Mpls Jr Devs #17",
-    "event_url": "",
-    "event_location": "Prime",
-    "presentation_format": "",
-    "presentation_title": "Mpls Jr Devs Happy Hour",
+    "event_title": "Mpls Jr Devs Pre-TCSW Happy Hour",
+    "event_url": "https://mplsjrdevs17.eventbrite.com",
+    "event_location": "WeWork",
+    "presentation_format": "Happy Hour",
+    "presentation_title": "Mpls Jr Devs Pre-TCSW Happy Hour",
     "presentation_url": "",
     "presenters": []
   },
