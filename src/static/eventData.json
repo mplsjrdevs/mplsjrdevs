@@ -271,5 +271,20 @@
         "url": "https://twitter.com/ant_auth"
       }
     ]
+  },
+  {
+    "event_date": "2019-01-08",
+    "event_title": "Mpls Jr Devs #19",
+    "event_url": "https://mplsjrdevs19.eventbrite.com",
+    "event_location": "Prime",
+    "presentation_format": "30 min",
+    "presentation_title": "Intro to Android Development",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "Dan Lew",
+        "url": "https://twitter.com/danlew42"
+      }
+    ]
   }
 ]
