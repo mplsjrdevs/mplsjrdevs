@@ -4,11 +4,12 @@ import eventData from '../../static/eventData';
 const DEMO_ID = 'demo_id';
 
 const mockClient = {
-  get: path =>
+  get: _path =>
     Promise.resolve({
       data: eventData.map((d, i) => ({ fields: d, id: `${DEMO_ID}_${i}` }))
     }),
-  post: (path, data) => Promise.resolve({ data: { fields: data, id: DEMO_ID } })
+  post: (_path, data) =>
+    Promise.resolve({ data: { fields: data, id: DEMO_ID } })
 };
 
 it('can create an event', async () => {

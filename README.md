@@ -17,6 +17,10 @@ This project was bootstrapped using [Create React App](https://github.com/facebo
   3. Run `yarn install` (or `npm install`)
   4. Run `yarn start` to spin up the app (http://localhost:3000)
 
+> NOTE: We use [Airtable](https://airtable.com) to allow us to update event data in real-time.
+> In development, there is a [mock](/blob/master/src/lib/airtable.js) that allows you to use JSON data.
+> If you have Airtable access, be sure to set `REACT_APP_AIRTABLE_APP_ID` and `REACT_APP_AIRTABLE_API_KEY` variables.
+
 # Deploying
 This site is hosted on GitHub pages.
 

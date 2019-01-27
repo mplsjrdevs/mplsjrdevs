@@ -2,9 +2,9 @@
 // so that it can be used both by scripts,
 // and by the app itself.
 
-const axios = require('axios');
+import axios from 'axios';
 
-const createEvent = client => async ({
+export const createEvent = client => async ({
   event_date,
   event_title,
   event_url,
@@ -25,9 +25,9 @@ const createEvent = client => async ({
     }
   });
 
-const listEvents = client => async () => client.get('/Events');
+export const listEvents = client => async () => client.get('/Events');
 
-const createClient = (appId, key) => {
+export const createClient = (appId, key) => {
   if (!appId) throw new Error('Please provide an App ID to createClient');
   if (!key) throw new Error('Please provide an API key to createClient');
   const client = axios.create({
@@ -39,10 +39,4 @@ const createClient = (appId, key) => {
     createEvent: createEvent(client),
     listEvents: listEvents(client)
   };
-};
-
-module.exports = {
-  createClient,
-  createEvent,
-  listEvents
 };
