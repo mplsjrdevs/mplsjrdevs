@@ -1,4 +1,8 @@
-const airtable = require('../src/services/airtable')
+// NOTE: Originally the Airtable API client I wrote using ES5 syntax, so it would work here
+// As development on the React app continued, I rewrote the client using ES6 syntax.
+// As a result, this script may no longer run.
+
+const airtable = require('../src/lib/airtable')
 const data = require('../src/static/eventData')
 
 const importEvents = async () => {
