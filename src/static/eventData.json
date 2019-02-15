@@ -139,7 +139,8 @@
     "event_location": "Prime",
     "presentation_format": "Long-form",
     "presentation_title": "Diversity & Inclusion",
-    "presentation_url": "https://docs.google.com/presentation/d/1A4lOPyfv_k3I6jvgfFhIVQt17eq6c-lS8ZhlTl_dn-w/edit?usp=sharing",
+    "presentation_url":
+      "https://docs.google.com/presentation/d/1A4lOPyfv_k3I6jvgfFhIVQt17eq6c-lS8ZhlTl_dn-w/edit?usp=sharing",
     "presenters": [
       {
         "name": "Ian Coldwater",
@@ -236,7 +237,8 @@
     "event_url": "https://mplsjrdevs16.eventbrite.com",
     "event_location": "Prime",
     "presentation_format": "30 min",
-    "presentation_title": "A Hiring Manager's Perspective on the Jr Dev Hiring Process",
+    "presentation_title":
+      "A Hiring Manager's Perspective on the Jr Dev Hiring Process",
     "presentation_url": "",
     "presenters": [
       {
@@ -297,6 +299,21 @@
       {
         "name": "Sean Berry",
         "url": "https://medium.com/@regularberry"
+      }
+    ]
+  },
+  {
+    "event_date": "2019-03-12",
+    "event_title": "Mpls Jr Devs #21",
+    "event_url": "https://mplsjrdevs21.eventbrite.com",
+    "event_location": "TBA",
+    "presentation_format": "30 min",
+    "presentation_title": "TBA",
+    "presentation_url": "",
+    "presenters": [
+      {
+        "name": "Sarah Rose Battles",
+        "url": "https://twitter.com/srosebattles"
       }
     ]
   }
