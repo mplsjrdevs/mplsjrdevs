@@ -12,8 +12,8 @@ export default {
       <br />
       <br />
       I work as a technical support engineer at Kipsu and am an organizer of
-      Mpls Jr Devs. I am a member of Make It. MSP's tech steering committee and
-      am a graduate of Prime Digital Academy.
+      Mpls Jr Devs. I am a member of Make It. MSP&#39;s tech steering committee
+      and am a graduate of Prime Digital Academy.
     </div>
   )
 };
