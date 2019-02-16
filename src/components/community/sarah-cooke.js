@@ -4,7 +4,6 @@ export default {
   id: 'sarah-cooke',
   name: 'Sarah Cooke',
   twitter: 'https://twitter.com/marshcooke',
-  website: 'http://sarahcooke.me',
   github: 'https://github.com/marshcooke',
   linkedin: 'https://www.linkedin.com/in/sarahmcooke/',
   bio: () => (
