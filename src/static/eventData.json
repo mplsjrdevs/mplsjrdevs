@@ -306,9 +306,10 @@
     "event_date": "2019-03-12",
     "event_title": "Mpls Jr Devs #21",
     "event_url": "https://mplsjrdevs21.eventbrite.com",
-    "event_location": "TBA",
+    "event_location": "Prime",
     "presentation_format": "30 min",
-    "presentation_title": "TBA",
+    "presentation_title":
+      "Javascript Libraries I Have Known and Loved (or Hated)",
     "presentation_url": "",
     "presenters": [
       {
