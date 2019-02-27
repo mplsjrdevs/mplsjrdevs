@@ -24,8 +24,16 @@ const createClient = (appId, apiKey) => {
             'event_location',
             'presentation_format',
             'presentation_title',
-            'presentation_url'
+            'presentation_url',
+            'presenters'
           ]
+        })
+        .firstPage(),
+    listPresenters: () =>
+      base('Presenters')
+        .select({
+          view: 'Grid view', // Airtable's default view
+          fields: ['name', 'url']
         })
         .firstPage()
   };

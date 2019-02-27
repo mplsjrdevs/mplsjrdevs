@@ -6,7 +6,13 @@ import moment from 'moment';
 import _ from 'lodash';
 
 class Events extends Component {
-  state = { isCollapseOpen: false, events: [], isLoading: false, error: false };
+  state = {
+    isCollapseOpen: false,
+    events: [],
+    presenters: [],
+    isLoading: false,
+    error: false
+  };
 
   componentDidMount() {
     this.fetchEvents();
@@ -15,11 +21,44 @@ class Events extends Component {
   async fetchEvents() {
     this.setState({ isLoading: true });
     try {
-      const records = await client.listEvents();
-      if (!records) return this.setState({ error: true });
-      const events = records.map(e => ({ ...e.fields }));
+      const eventRecords = await client.listEvents();
+      if (!eventRecords) return this.setState({ error: true });
+
+      const presenterRecords = await client.listPresenters();
+      if (!presenterRecords) return this.setState({ error: true });
+
+      const presentersById = presenterRecords.reduce((byId, rec) => {
+        if (!rec) return byId;
+        const { id, fields } = rec;
+        if (!id) return byId;
+        return { ...byId, [id]: fields };
+      }, {});
+
+      const events = eventRecords.map(e => {
+        const { fields } = e;
+        if (!fields.presenters) {
+          return { ...fields };
+        }
+        const presenters = fields.presenters.map(pid => presentersById[pid]);
+        return { ...fields, presenters };
+      });
 
       this.setState({ events });
+    } catch (e) {
+      this.setState({ error: true });
+    } finally {
+      this.setState({ isLoading: false });
+    }
+  }
+
+  async fetchPresenters() {
+    this.setState({ isLoading: true });
+    try {
+      const records = await client.listPresenters();
+      if (!records) return this.setState({ error: true });
+      const presenters = records.map(e => ({ ...e.fields }));
+
+      this.setState({ presenters });
     } catch (e) {
       this.setState({ error: true });
     } finally {
