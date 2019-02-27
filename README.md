@@ -54,3 +54,4 @@ This site was built by our community members. Thanks to everyone who's contribut
 * [Jenessa White](https://github.com/jenessawhite)
 * [Garret Saarinen](https://github.com/gsaarinen)
 * [Matt Decuir](https://github.com/experimatt)
+* [Sarah Cooke](https://github.com/marshcooke)
