@@ -12,9 +12,10 @@ This project was bootstrapped using [Create React App](https://github.com/facebo
 
 ## Development Instructions
 
-  1. Clone the repo
-  2. Run `yarn install` (or `npm install`)
-  3. Run `yarn start` to spin up the app (http://localhost:3000)
+  1. Fork the repo
+  2. clone the repo
+  3. Run `yarn install` (or `npm install`)
+  4. Run `yarn start` to spin up the app (http://localhost:3000)
 
 # Deploying
 This site is hosted on GitHub pages.
@@ -42,7 +43,7 @@ export default {
     bio: () => "The bio key can be a function that returns a string, a React component, or nothing at all -- you choose!"
 }
 ```
-5. Create a new branch, commit your work to it, and submit a pull request to this repo. Someone on the website team will review, leave feedback, and merge your PR when it's ready.
+5. Create a new branch, commit your work to it, and submit a pull request from your forked repo to this repo. Someone on the website team will review, leave feedback, and merge your PR when it's ready.
 
 # Contributing
 This site was built by our community members. Thanks to everyone who's contributed so far:
