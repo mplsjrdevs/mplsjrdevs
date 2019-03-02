@@ -9,6 +9,7 @@ import Community from './Community';
 import CodeOfConduct from './CodeOfConduct';
 import Contact from './Contact';
 import '../styles/App.scss';
+import '../styles/diversitynow.scss';
 
 class App extends Component {
   componentWillMount() {
