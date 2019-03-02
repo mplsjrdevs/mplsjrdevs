@@ -1,6 +1,6 @@
 /* MN Tech Diversity */
-.diversitybadge{
-	background-image: url(../images/badge.png);
+.diversitybadge {
+    background-image: url(../images/badge.png);
     position: fixed;
     right: 0px;
     top: 55px;
@@ -10,12 +10,12 @@
     background-size: 100%;
     background-repeat: no-repeat;
 
-	-webkit-transition: all 1s ease;
-    transition: all 1s ease; 
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 @media (max-width: 767px) {
-.diversitybadge {
-    top: 75px;
-}
+    .diversitybadge {
+        top: 75px;
+    }
 }
