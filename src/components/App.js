@@ -8,8 +8,8 @@ import Events from './Events';
 import Community from './Community';
 import CodeOfConduct from './CodeOfConduct';
 import Contact from './Contact';
-import '../styles/App.css';
-import '../styles/diversitynow.css';
+import '../styles/App.scss';
+import '../styles/diversitynow.scss';
 
 class App extends Component {
   componentWillMount() {
