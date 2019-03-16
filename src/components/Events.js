@@ -1,16 +1,94 @@
 import React, { Component } from 'react';
 import Event from './Event';
-import eventData from '../static/eventData.json';
+import client from '../services/airtable';
 import { Button, Collapse } from '@blueprintjs/core';
 import moment from 'moment';
 import _ from 'lodash';
 
 class Events extends Component {
-  state = { isCollapseOpen: false };
+  state = {
+    isCollapseOpen: false,
+    events: [],
+    presenters: [],
+    isLoading: false,
+    error: false
+  };
+
+  componentDidMount() {
+    this.fetchEvents();
+  }
+
+  async fetchEvents() {
+    this.setState({ isLoading: true });
+    try {
+      const eventRecords = await client.listEvents();
+      if (!eventRecords) return this.setState({ error: true });
+
+      const presenterRecords = await client.listPresenters();
+      if (!presenterRecords) return this.setState({ error: true });
+
+      const presentersById = presenterRecords.reduce((byId, rec) => {
+        if (!rec) return byId;
+        const { id, fields } = rec;
+        if (!id) return byId;
+        return { ...byId, [id]: fields };
+      }, {});
+
+      const events = eventRecords.map(e => {
+        const { fields } = e;
+        if (!fields.presenters) {
+          return { ...fields };
+        }
+        const presenters = fields.presenters.map(pid => presentersById[pid]);
+        return { ...fields, presenters };
+      });
+
+      this.setState({ events });
+    } catch (e) {
+      this.setState({ error: true });
+    } finally {
+      this.setState({ isLoading: false });
+    }
+  }
+
+  async fetchPresenters() {
+    this.setState({ isLoading: true });
+    try {
+      const records = await client.listPresenters();
+      if (!records) return this.setState({ error: true });
+      const presenters = records.map(e => ({ ...e.fields }));
+
+      this.setState({ presenters });
+    } catch (e) {
+      this.setState({ error: true });
+    } finally {
+      this.setState({ isLoading: false });
+    }
+  }
+
+  renderError() {
+    return (
+      <section id="events">
+        <h2>Hang tight...</h2>
+        <h3>We can't access the event schedule right now. Try again later.</h3>
+      </section>
+    );
+  }
+  renderLoading() {
+    return (
+      <section id="events">
+        <h2>Loading events...</h2>
+        <h3>Upcoming get-togethers arriving in three...two...one...</h3>
+      </section>
+    );
+  }
 
   render() {
+    const { loading, events, error } = this.state;
+    if (loading) return this.renderLoading();
+    if (error || !events) return this.renderError();
     // split past and upcoming events based on today's date
-    let [pastEvents, upcomingEvents] = _.partition(eventData, event => {
+    let [pastEvents, upcomingEvents] = _.partition(events, event => {
       return moment(event.event_date)
         .startOf('day')
         .isBefore(moment().startOf('day'));
