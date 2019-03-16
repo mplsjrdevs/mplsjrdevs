@@ -15,10 +15,8 @@ class Events extends Component {
   async fetchEvents() {
     this.setState({ isLoading: true });
     try {
-      const res = await client.listEvents();
-      if (!res || !res.data || !res.data.records)
-        return this.setState({ error: true });
-      const { records } = res.data;
+      const records = await client.listEvents();
+      if (!records) return this.setState({ error: true });
       const events = records.map(e => ({ ...e.fields }));
 
       this.setState({ events });
