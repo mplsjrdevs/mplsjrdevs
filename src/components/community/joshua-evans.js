@@ -8,32 +8,31 @@ export default {
   bio: () => {
     return (
       <div>
-        Hello! I&#39;m Josh.
+        Hey! I&#39;m Josh.
         <br />
         <br />
-        I&#39;m a recent graduate of Prime Digital Academy.
+        I&#39;m an Associate Software Engineer at Virgin Pulse.
         <br />
         <br />
-        Prior to attending Prime I graduated from Winona State University with a
-        BS in Kinesiology, and began working as a Personal Trainer for Anytime
-        Fitness.
+        In 2018 I graduated from Prime Digital Academy in August and started at Virgin Pulse in November.
         <br />
         <br />
-        Besides being a Minneapolis Jr. Developer, I am also a USAPL powerlifter
-        and an aspiring novelist.
+        Besides being a Minneapolis Jr. Developer, I am also an aspiring novelist.  I spend my free time 
+        learning new technologies and writing fiction.
         <br />
         <br />
-        My expertise is in Javascript, working with:
+        In my current position I work with a variety of technologies that include:
         <ul style={{ listStyleType: 'none' }}>
           <li>React</li>
-          <li>Angular</li>
-          <li>Node.js</li>
+          <li>Angular.js</li>
+          <li>Java</li>
+          <li>Kotlin</li>
           <li>MongoDB</li>
           <li>PostgreSQL</li>
         </ul>
         <br />
-        Currently, I&#39;m flirting with few different technologies, including
-        Python with Flask, SQLite, Ruby with Jekyll, Kotlin and C#.
+        Currently I&#39;m spending my free time working on a proof of concept for a location sharing api
+        built on the ASP.NET core framework.
       </div>
     );
   }
