@@ -19,7 +19,7 @@ This project was bootstrapped using [Create React App](https://github.com/facebo
 
 > NOTE: We use [Airtable](https://airtable.com) to allow us to update event data in real-time.
 > In development, there is a [mock](/blob/master/src/lib/airtable.js) that allows you to use JSON data.
-> If you have Airtable access, be sure to set `REACT_APP_AIRTABLE_APP_ID` and `REACT_APP_AIRTABLE_API_KEY` variables.
+> Read-only API keys are stored in `REACT_APP_AIRTABLE_APP_ID` and `REACT_APP_AIRTABLE_API_KEY` variables in a `.env` file.
 
 # Deploying
 This site is hosted on GitHub pages.
