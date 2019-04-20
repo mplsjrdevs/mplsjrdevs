@@ -3,3 +3,12 @@ Disallow:
 
 User-agent: Googlebot
 Disallow: 
+
+User-agent: Facebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: *
+Disallow: /
