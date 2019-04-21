@@ -68,28 +68,28 @@ self.__precacheManifest = [
     "url": "/static/media/travis-lang.b8a197e4.jpg"
   },
   {
-    "revision": "c22f3806638273bd9e764fea0a812c51",
-    "url": "/static/media/icons-16.c22f3806.eot"
-  },
-  {
-    "revision": "d13388bee1190a551bb5d9c9f953a779",
-    "url": "/static/media/icons-16.d13388be.woff"
-  },
-  {
     "revision": "76957eb0b3f1dd52766872b7dd6c04d6",
     "url": "/static/media/icons-16.76957eb0.ttf"
+  },
+  {
+    "revision": "c22f3806638273bd9e764fea0a812c51",
+    "url": "/static/media/icons-16.c22f3806.eot"
   },
   {
     "revision": "062208ea882dd2a7e2fa8552c6f32e3b",
     "url": "/static/media/icons-20.062208ea.eot"
   },
   {
-    "revision": "f56d7d3470cf9d60593812561aff63c4",
-    "url": "/static/media/icons-20.f56d7d34.woff"
+    "revision": "d13388bee1190a551bb5d9c9f953a779",
+    "url": "/static/media/icons-16.d13388be.woff"
   },
   {
     "revision": "6d716ba49663310796d6cf4d6d8b65b2",
     "url": "/static/media/icons-20.6d716ba4.ttf"
+  },
+  {
+    "revision": "f56d7d3470cf9d60593812561aff63c4",
+    "url": "/static/media/icons-20.f56d7d34.woff"
   },
   {
     "revision": "fc4924d900dec7e6f591416aa86e4c31",
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/static/media/badge.5272a5cd.png"
   },
   {
-    "revision": "86ce91225f1c6431759c4f5546b4ff07",
+    "revision": "0990d1a4053eaaf842972c36f3848907",
     "url": "/index.html"
   }
 ];
