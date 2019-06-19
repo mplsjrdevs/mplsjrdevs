@@ -34,7 +34,7 @@ const Event = props => {
   }
 
   // build register button, if shown
-  let twoWeeksBeforeEvent = eventDate.subtract(14, 'day');
+  let twoWeeksBeforeEvent = eventDate.subtract(21, 'day'); // changing from 14 to 21 days specifically for our July event
   let registerButton;
   if (props.showRegisterButton) {
     if (
