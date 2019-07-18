@@ -18,6 +18,7 @@ const createClient = (appId, apiKey) => {
         .select({
           view: 'Grid view', // Airtable's default view
           fields: [
+            'days_tickets_available',
             'event_date',
             'event_title',
             'event_url',
