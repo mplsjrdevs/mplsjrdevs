@@ -4,6 +4,8 @@ import moment from 'moment';
 import _isEmpty from 'lodash/isEmpty';
 
 const Event = props => {
+  console.log({ props });
+
   let hasPresenters = !_isEmpty(props.presenters);
   let eventDate = moment(props.event_date).startOf('day');
   let formattedDate = eventDate.format('MMM DD, YYYY');
@@ -34,13 +36,16 @@ const Event = props => {
   }
 
   // build register button, if shown
-  let twoWeeksBeforeEvent = eventDate.subtract(21, 'day'); // changing from 14 to 21 days specifically for our July event
+  let ticketReleaseDate = eventDate.subtract(
+    props.days_tickets_available,
+    'day'
+  ); // use airtable days_tickets_available value to set ticket release date
   let registerButton;
   if (props.showRegisterButton) {
     if (
       moment()
         .startOf('day')
-        .isSameOrAfter(twoWeeksBeforeEvent)
+        .isSameOrAfter(ticketReleaseDate)
     ) {
       registerButton = (
         <div className="register">
@@ -53,7 +58,7 @@ const Event = props => {
       registerButton = (
         <div className="register">
           <Button
-            text={`Registration opens ${twoWeeksBeforeEvent.format('MMM Do')}`}
+            text={`Registration opens ${ticketReleaseDate.format('MMM Do')}`}
             className="pt-large pt-disabled button disabled"
           />
         </div>
