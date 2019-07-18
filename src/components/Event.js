@@ -4,8 +4,6 @@ import moment from 'moment';
 import _isEmpty from 'lodash/isEmpty';
 
 const Event = props => {
-  console.log({ props });
-
   let hasPresenters = !_isEmpty(props.presenters);
   let eventDate = moment(props.event_date).startOf('day');
   let formattedDate = eventDate.format('MMM DD, YYYY');
