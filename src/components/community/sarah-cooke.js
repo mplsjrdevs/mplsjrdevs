@@ -10,11 +10,10 @@ export default {
     <div>
       Hey, I&#39;m Sarah!
       <br />
-      <br />
-      I work as an Accessibility Engineer at Accessible360. I have been an
-      organizer of Mpls Jr Devs since May 2018 and a member of Make It.
-      MSP&#39;s tech steering committee since January 2019. I am an alumna of
-      Prime Digital Academy&#39;s development bootcamp.
+      I am an Accessibility Engineer at Accessible360. I have been a Mpls Jr
+      Devs organizer since May 2018 and a member of Make It. MSP&#39;s tech
+      steering committee since January 2019. I graduated from Prime Digital
+      Academy&#39;s development bootcamp.
     </div>
   )
 };
