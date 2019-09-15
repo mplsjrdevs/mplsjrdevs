@@ -1,22 +1,22 @@
 self.__precacheManifest = [
   {
-    "revision": "d36c5b1a0f8fd4c712fe",
-    "url": "/static/css/main.7f43166a.chunk.css"
+    "revision": "0afeb69541d6b9a7563c",
+    "url": "/static/css/main.9b4fb5d5.chunk.css"
   },
   {
-    "revision": "d36c5b1a0f8fd4c712fe",
-    "url": "/static/js/main.bff4dc19.chunk.js"
+    "revision": "0afeb69541d6b9a7563c",
+    "url": "/static/js/main.0c1317e0.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "bbdfeaba9a0880a6609e",
-    "url": "/static/css/2.0d32a371.chunk.css"
+    "revision": "424b3cd47723f5ed9f47",
+    "url": "/static/css/2.f764edb7.chunk.css"
   },
   {
-    "revision": "bbdfeaba9a0880a6609e",
+    "revision": "424b3cd47723f5ed9f47",
     "url": "/static/js/2.d90170ad.chunk.js"
   },
   {
@@ -68,6 +68,10 @@ self.__precacheManifest = [
     "url": "/static/media/travis-lang.b8a197e4.jpg"
   },
   {
+    "revision": "fc4924d900dec7e6f591416aa86e4c31",
+    "url": "/static/media/banner.fc4924d9.jpg"
+  },
+  {
     "revision": "c22f3806638273bd9e764fea0a812c51",
     "url": "/static/media/icons-16.c22f3806.eot"
   },
@@ -84,23 +88,19 @@ self.__precacheManifest = [
     "url": "/static/media/icons-20.062208ea.eot"
   },
   {
-    "revision": "6d716ba49663310796d6cf4d6d8b65b2",
-    "url": "/static/media/icons-20.6d716ba4.ttf"
-  },
-  {
     "revision": "f56d7d3470cf9d60593812561aff63c4",
     "url": "/static/media/icons-20.f56d7d34.woff"
   },
   {
-    "revision": "fc4924d900dec7e6f591416aa86e4c31",
-    "url": "/static/media/banner.fc4924d9.jpg"
+    "revision": "6d716ba49663310796d6cf4d6d8b65b2",
+    "url": "/static/media/icons-20.6d716ba4.ttf"
   },
   {
     "revision": "5272a5cd955560d6c040dbd9e2a19ebc",
     "url": "/static/media/badge.5272a5cd.png"
   },
   {
-    "revision": "9b32b83f79cedbc73a47c407e2a69040",
+    "revision": "702357f7ef21628765330b84f864b027",
     "url": "/index.html"
   }
 ];
