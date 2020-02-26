@@ -7,7 +7,7 @@ import faQuestion from '@fortawesome/fontawesome-free-solid/faQuestion';
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <footer id="contact">
       <h2>Contact</h2>
       <div className="flex-container">
         <div className="contact-method">
@@ -104,7 +104,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

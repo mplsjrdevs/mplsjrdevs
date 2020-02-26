@@ -5,7 +5,8 @@ body {
   font-size: 16px;
 }
 
-section {
+section,
+footer {
   padding: 4rem;
 
   @media (max-width: $laptop) {
