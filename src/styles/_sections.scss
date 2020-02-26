@@ -343,6 +343,13 @@
     margin: 1rem;
     min-width: 200px;
     max-width: 400px;
+
+    label {
+      text-align: left;
+      font-size: 14px;
+      padding-left: 15px;
+      padding-bottom: 5px;
+    }
   }
 
   .divider {

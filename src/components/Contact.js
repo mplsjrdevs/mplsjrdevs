@@ -26,12 +26,12 @@ const Contact = () => {
               noValidate
             >
               <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Email address:</label>
                 <input
                   type="email"
                   name="EMAIL"
                   className="email"
                   id="mce-EMAIL"
-                  placeholder="email address"
                   required
                 />{' '}
                 <div id="mc_hidden" aria-hidden="true">
@@ -66,7 +66,8 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               email us
-            </a>.
+            </a>
+            .
           </div>
         </div>
         <div className="divider" />
@@ -81,14 +82,16 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               @mplsjrdevs
-            </a>.
+            </a>
+            .
           </div>
         </div>
         <div className="divider" />
         <div className="contact-method">
           <FontAwesomeIcon icon={faQuestion} size="4x" />
           <div className="contact-text">
-            Got questions?<br />
+            Got questions?
+            <br />
             <br />
             <a
               href="mailto:mplsjrdevs@gmail.com"
