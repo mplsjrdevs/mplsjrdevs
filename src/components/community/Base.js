@@ -13,8 +13,9 @@ const Social = ({ icon, url }) => (
     target="_blank"
     rel="noopener noreferrer"
     className="social-link"
+    aria-label="label"
   >
-    <FontAwesomeIcon icon={icon} size="2x" />
+    <FontAwesomeIcon icon={icon} size="2x" aria-hidden="true" />
   </a>
 );
 
@@ -28,11 +29,15 @@ export default ({
   website
 }) => {
   const links = [
-    website && <Social key={0} icon={faLink} url={website} />,
-    github && <Social key={1} icon={faGithub} url={github} />,
-    gitlab && <Social key={2} icon={faGitlab} url={gitlab} />,
-    twitter && <Social key={3} icon={faTwitter} url={twitter} />,
-    linkedin && <Social key={4} icon={faLinkedIn} url={linkedin} />
+    website && <Social key={0} icon={faLink} url={website} label="website" />,
+    github && <Social key={1} icon={faGithub} url={github} label="github" />,
+    gitlab && <Social key={2} icon={faGitlab} url={gitlab} label="gitlab" />,
+    twitter && (
+      <Social key={3} icon={faTwitter} url={twitter} label="twitter" />
+    ),
+    linkedin && (
+      <Social key={4} icon={faLinkedIn} url={linkedin} label="linkedIn" />
+    )
   ];
 
   return (
