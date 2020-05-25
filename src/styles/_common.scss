@@ -5,7 +5,8 @@ body {
   font-size: 16px;
 }
 
-section {
+section,
+footer {
   padding: 4rem;
 
   @media (max-width: $laptop) {
@@ -92,6 +93,19 @@ img.responsive {
 #mc_embed_signup {
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
+
+  label {
+    display: inline-block;
+    width: 90%;
+    max-width: 400px;
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 14px;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
 
   input.email {
     width: 90%;
