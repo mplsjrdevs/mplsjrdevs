@@ -53,7 +53,7 @@ class Community extends Component {
     return (
       <section id="community">
         <h2>Community</h2>
-        <div className="flex-container">
+        <div className="flex-container" role="region" aria-label="Carousel">
           <div className="carousel-container">
             <img
               src={this.state.featuredPerson['image']}
