@@ -3,16 +3,16 @@ import React from 'react';
 export default {
   id: 'nate-celeste',
   name: 'Nate Celeste',
-  twitter: '',
-  github: '',
-  linkedin: '',
+  twitter: 'https://twitter.com/ntceleste',
+  github: 'https://github.com/ntceleste',
+  linkedin: 'https://www.linkedin.com/in/ntceleste/',
   bio: () => (
     <div>
       Hi, I&#39;m Nate!
       <br />
       <br />
-      I graduated from Case Western Reserve University (it's in Cleveland, OH)
-      in 2019 with a BA in Computer Science. I couldn't wait to get back to Mpls
+      I graduated from Case Western Reserve University (in Cleveland, OH) in
+      2019 with a BA in Computer Science. I couldn't wait to get back to Mpls
       and start my journey as a developer with the awesome tech community here!
       I'm currently an organizer for Mpls Jr Devs.
       <br />
