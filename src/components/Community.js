@@ -74,11 +74,7 @@ class Community extends Component {
                   className="image-overlay"
                 >
                   <div className="overlay-text">{person['name']}</div>
-                  <img
-                    src={person['image']}
-                    alt={person['name']}
-                    className="community-image"
-                  />
+                  <img src={person['image']} className="community-image" />
                 </a>
               );
             })}
