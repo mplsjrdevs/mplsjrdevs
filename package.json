@@ -12,7 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.0.20",
     "airtable": "^0.7.0",
     "gh-pages": "^1.1.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "moment": "^2.22.1",
     "node-sass": "^4.11.0",
     "npm": "^6.13.4",
